@@ -1,105 +1,64 @@
-/* Reset default styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Imperalith Fund</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">The Imperalith Fund</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0b0b0c;
-  color: #f5f5f5;
-}
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>The Imperalith Fund</h1>
+            <p>A solo-managed equity research fund designed and led by Josh Zhuang. Powered by long-term thinking, value investing, and macro insight.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </header>
 
-/* Navigation Styling */
-nav {
-  background-color: #0b0b0c;
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The Imperalith Fund is a self-run equity research initiative by Josh Zhuang, focused on deep value, economic trends, and long-term fundamentals. It operates independently under the Imperalith Capital name.</p>
+        </section>
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+        <section id="portfolio">
+            <h2>Portfolio Overview</h2>
+            <ul>
+                <li>Tracking over $30,000 in personal/family-managed capital</li>
+                <li>Top holdings: $KO, $GS, $SMCI</li>
+                <li>Strategy: Long-term value investing with macro awareness and intrinsic valuation</li>
+            </ul>
+        </section>
 
-.logo {
-  color: #f5c542;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-}
+        <section id="fund">
+            <h2>Our Fund</h2>
+            <p>Imperalith Capital currently manages <strong>The Imperalith Fund</strong>, a simulated value-oriented portfolio. The strategy is grounded in bottom-up research, macroeconomic awareness, and long-term capital appreciation.</p>
+            <p>As of June 2025, the fund tracks over <strong>$30,000</strong> in personal and family-managed assets.</p>
+        </section>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
+        <section id="research">
+            <h2>Investment Research</h2>
+            <p>We publish independent equity research on selected public companies. Reports are grounded in fundamental analysis and long-term intrinsic value assessments.</p>
+            <p>To access full reports, please <a href="mailto:zhuangjosh05@gmail.com">contact us via email</a>.</p>
+        </section>
 
-.nav-links li a {
-  color: #f5c542;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links li a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-#hero {
-  height: 90vh;
-  background: url("nyc-hero-banner.jpg") no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 12px;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #f5c542;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: auto;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #f5c542;
-  color: #0b0b0c;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-/* Section Styling */
-section {
-  padding: 60px 40px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #f5c542;
-}
-
-a {
-  color: #f5c542;
-}
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:zhuangjosh05@gmail.com">zhuangjosh05@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/joshzhuang" target="_blank">Josh Zhuang</a></p>
+        </section>
+    </main>
+</body>
+</html>
