@@ -1,32 +1,74 @@
-
+/* Base layout and global styles */
 body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    background: #f7f7f7;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
 }
 
+/* Logo */
+.logo-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.site-logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header (Hero style) */
 header {
-    background: #880000;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+  background-color: #880000;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Section styling */
 section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
-h1, h2 {
-    font-weight: 700;
+section h2 {
+  font-size: 1.5rem;
+  color: #111;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
+/* Link styling */
+a {
+  color: #004080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background: #222;
-    color: #aaa;
-    text-align: center;
-    padding: 1rem;
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
 }
