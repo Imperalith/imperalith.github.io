@@ -52,7 +52,7 @@ nav {
 /* Hero Section */
 #hero {
   height: 90vh;
-  background: url("nyc-skyline.jpg") no-repeat center center/cover;
+  background: url("nyc-hero-banner.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
