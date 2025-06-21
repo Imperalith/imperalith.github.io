@@ -155,3 +155,31 @@ footer {
     font-size: 2rem;
   }
 }
+/* ────── ABOUT GRID ────── */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 260px 260px;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-text { grid-column: 1 / 2; }
+
+.about-img {
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0b0b0c;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+.about-img img { width: 100%; display: block; }
+
+/* stack nicely on phones */
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img { margin-top: 20px; }
+}
