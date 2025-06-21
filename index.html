@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Imperalith Fund</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,12 +13,8 @@
   <nav class="navbar">
     <div class="logo">The Imperalith Fund</div>
 
-    <!-- mobile hamburger -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      &#9776;
-    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
 
-    <!-- desktop / mobile links -->
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -28,7 +24,6 @@
   </nav>
   <!-- ╚══════════════════════════════╝ -->
 
-  <!-- Hero -->
   <header class="hero">
     <div class="hero-overlay">
       <h1>The Imperalith Fund</h1>
@@ -40,44 +35,47 @@
     </div>
   </header>
 
-  <!-- Main content -->
   <main>
- <!-- ╔═══════ ABOUT ========= -->
-<section id="about" class="about">
-  <div class="about-text">
-    <h2>About&nbsp;Josh Zhuang</h2>
-    <p>
-      I’m the founder and portfolio manager of <strong>The Imperalith Fund</strong>.
-      My investment approach blends bottom-up value analysis with a global macro
-      lens. I’m currently based in New York but split my time between the US and Asia,
-      researching companies first-hand.
-    </p>
-    <p class="small">
-      Away from the terminal you’ll find me exploring new financial hubs, reading
-      economic history, or enjoying a quiet game of billiards.
-    </p>
-  </div>
 
-  <figure class="about-img formal">
-    <img src="formal.jpg" alt="Josh Zhuang — formal portrait in grey suit">
-    <figcaption>Formal studio portrait</figcaption>
-  </figure>
+    <!-- ╔═══════ ABOUT  ══════════════╗ -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Josh Zhuang</h2>
+        <p>
+          I’m the founder and portfolio manager of
+          <strong>The Imperalith Fund</strong>. My investment approach blends
+          bottom-up value analysis with a global macro lens. I split my time
+          between New York and key Asian financial centres, researching
+          companies first-hand.
+        </p>
+        <p class="small">
+          Away from the terminal you’ll find me exploring new financial hubs,
+          reading economic history, or enjoying a quiet game of billiards.
+        </p>
+      </div>
 
-  <figure class="about-img casual">
-    <img src="casual.jpg" alt="Josh Zhuang on the Bund, Shanghai">
-    <figcaption>Evening on Shanghai’s Bund riverfront</figcaption>
-  </figure>
-</section>
-<!-- ╚═══════════════════════ -->
-    
+      <div class="about-photos">
+        <figure class="about-img">
+          <img src="formal.jpg" alt="Formal portrait of Josh Zhuang">
+          <figcaption>Formal studio portrait</figcaption>
+        </figure>
+
+        <figure class="about-img">
+          <img src="casual.jpg" alt="Josh Zhuang on Shanghai’s Bund riverfront">
+          <figcaption>Evening on Shanghai’s Bund riverfront</figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- ╚═════════════════════════════╝ -->
+
     <section id="fund">
       <h2>Our Fund</h2>
       <p>
         Imperalith Capital currently manages <strong>The Imperalith Fund</strong>,
         a simulated value-oriented portfolio grounded in bottom-up research,
-        macroeconomic awareness, and long-term capital appreciation. As of June 2025
-        the fund tracks over <strong>$30 000</strong> in personal and family-managed
-        assets.
+        macroeconomic awareness, and long-term capital appreciation.  
+        As of June 2025 the fund tracks over <strong>$30 000</strong> in
+        personal and family-managed assets.
       </p>
     </section>
 
@@ -102,11 +100,9 @@
     <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
   </footer>
 
-  <!-- ███  tiny JS for the hamburger  ███ -->
   <script>
     const burger = document.getElementById('hamburger');
-    const nav = document.getElementById('navLinks');
-
+    const nav    = document.getElementById('navLinks');
     burger.addEventListener('click', () => {
       nav.classList.toggle('open');
       burger.classList.toggle('open');
