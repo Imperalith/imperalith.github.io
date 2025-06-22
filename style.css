@@ -95,3 +95,31 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
 @media(min-width:1200px){
   .about-photos{flex:0 0 450px}
 }
+
+.fund-section {
+  margin-bottom: 3rem;
+}
+
+.fund-bg {
+  background: url("fund-bg.gif") center center/cover no-repeat;
+  padding: 80px 40px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fund-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  color: #f5f5f5;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .fund-overlay {
+    padding: 24px;
+  }
+}
