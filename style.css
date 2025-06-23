@@ -211,12 +211,11 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
     background-color: #e6c200;
 }
 .contact-page {
-    background-image: url('contact-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: contain; /* keeps original aspect ratio */
-    background-position: center;
-    background-color: #000; /* fallback behind transparent parts */
-    background-attachment: fixed;
+    min-height: 100vh;
+    background: url('contact-bg.jpg') center center / cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
 }
