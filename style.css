@@ -279,11 +279,12 @@ ul {
 .fund-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 500px; /* You wanted a horizontal rectangle, not full screen */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .fund-video {
@@ -299,16 +300,16 @@ ul {
 .fund-overlay {
   position: relative;
   z-index: 1;
-  max-width: 700px;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 40px;
-  border-radius: 12px;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 35px 50px;
+  border-radius: 14px;
   text-align: center;
   color: white;
 }
 
 .fund-overlay h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #FFD700;
   margin-bottom: 1rem;
 }
