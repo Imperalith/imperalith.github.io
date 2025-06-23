@@ -499,3 +499,18 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
   color: #FFD700;
   font-size: 0.9rem;
 }
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100% !important;
+  display: block;
+}
+
+.contact-form-box form {
+  display: flex;
+  flex-direction: column;
+}
