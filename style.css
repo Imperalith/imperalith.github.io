@@ -146,7 +146,7 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
 .fund-overlay {
   position: relative;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.45); /* Semi-transparent black */
   color: white;
   text-align: center;
   padding: 30px 40px;
