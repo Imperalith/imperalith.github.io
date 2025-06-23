@@ -32,6 +32,9 @@ nav.navbar{
 .hero {
   position: relative;
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ✅ This centers the overlay vertically */
   overflow: hidden;
 }
 
