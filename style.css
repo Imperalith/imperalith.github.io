@@ -18,9 +18,7 @@ nav.navbar{
   display:flex;justify-content:space-between;align-items:center;
   position:sticky;top:0;z-index:1000
 }
-.logo img {
-  width: 160px;
-}
+.logo{font-size:1.6rem;font-weight:700;color:#FFD700}
 .nav-links{list-style:none;display:flex;gap:30px}
 .nav-links li a{color:#FFD700;font-weight:500;transition:.3s}
 .nav-links li a:hover{color:#FFA500}
@@ -39,6 +37,7 @@ nav.navbar{
   align-items: center;
   overflow: hidden;
 }
+
 .hero video {
   position: absolute;
   top: 0;
@@ -48,6 +47,7 @@ nav.navbar{
   object-fit: cover;
   z-index: 0;
 }
+
 .hero-overlay {
   position: relative;
   z-index: 1;
@@ -94,43 +94,7 @@ ul{padding-left:1.5rem;list-style:disc}
 .about-img img{width:100%;display:block}
 
 /* ───────── FOOTER ───────── */
-.site-footer {
-  background-color: #0d1117;
-  color: #bbb;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.site-footer .footer-logo img {
-  width: 160px;
-  margin-bottom: 10px;
-}
-.site-footer .footer-section {
-  flex: 1;
-  min-width: 180px;
-  margin-bottom: 20px;
-}
-.site-footer .footer-section h4 {
-  color: #fff;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-.site-footer .footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-.site-footer .footer-section ul li {
-  margin-bottom: 8px;
-}
-.site-footer .footer-section ul li a {
-  color: #bbb;
-  font-size: 0.95rem;
-}
-.site-footer .footer-section ul li a:hover {
-  color: #fff;
-}
+footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9rem}
 
 /* ───────── RESPONSIVE ───────── */
 @media(max-width:768px){
@@ -202,6 +166,7 @@ ul{padding-left:1.5rem;list-style:disc}
   position: relative;
   flex-direction: column;
 }
+
 .contact-page::before {
   content: "";
   position: absolute;
@@ -209,22 +174,25 @@ ul{padding-left:1.5rem;list-style:disc}
   background-color: rgba(0, 0, 0, 0.65);
   z-index: -1;
 }
+
 .contact-container {
   max-width: 500px;
   width: 100%;
   padding: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);  /* Black + 0.5 opacity */
   backdrop-filter: blur(6px);
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   text-align: center;
-  margin: 60px auto;
+  margin: 60px auto; /* ensures it's vertically spaced */
 }
+
 .contact-container h2 {
   font-size: 28px;
   color: white;
   margin-bottom: 20px;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -235,10 +203,12 @@ ul{padding-left:1.5rem;list-style:disc}
   border-radius: 8px;
   color: white;
 }
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
+
 .contact-form button {
   width: 100%;
   padding: 12px;
@@ -249,9 +219,11 @@ ul{padding-left:1.5rem;list-style:disc}
   border-radius: 8px;
   cursor: pointer;
 }
+
 .contact-form button:hover {
   background-color: #ddb207;
 }
+
 .back-home {
   display: block;
   margin-top: 20px;
