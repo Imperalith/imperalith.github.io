@@ -210,3 +210,18 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
 .contact-card button:hover {
     background-color: #e6c200;
 }
+.contact-page {
+    background-image: url('contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.contact-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* dims the image */
+    z-index: -1;
+}
