@@ -123,49 +123,43 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
 
 .fund-section {
   position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 40px auto;
-  border-radius: 12px;
+  height: 500px;
   overflow: hidden;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1024px;
 }
 
 .fund-video {
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
   object-fit: cover;
-  display: block;
 }
 
 .fund-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* slightly see-through */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 30px;
-}
-
-.fund-overlay h2 {
-  font-size: 2rem;
-  color: #ffd700;
-  margin-bottom: 15px;
-}
-
-.fund-overlay p {
-  max-width: 700px;
-  font-size: 1rem;
+  padding: 30px 40px;
+  max-width: 750px;
+  margin: auto;
+  border-radius: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
   .fund-overlay {
-    padding: 24px;
+    padding: 20px;
+    font-size: 0.9rem;
   }
 }
