@@ -437,3 +437,62 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* ───────── CONTACT FORM ───────── */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: url('images/globe.jpg') center/cover no-repeat;
+}
+.contact-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+.contact-box h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-box input,
+.contact-box textarea {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.contact-box textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contact-box button {
+  padding: 12px;
+  border: none;
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-box button:hover {
+  background-color: #e6c200;
+}
+.contact-box a {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 0.9rem;
+}
