@@ -241,6 +241,13 @@ ul {
     border-radius: 6px;
     cursor: pointer;
     z-index: 9999;
+    /* Hide hamburger on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
   }
   .nav-links {
     display: none;
