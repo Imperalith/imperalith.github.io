@@ -345,3 +345,95 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
 .footer-links a:hover {
   color: #fff;
 }
+
+/* === CONTACT PAGE === */
+.contact-page {
+  background: url('contact-bg.jpg') center center / cover no-repeat;
+  min-height: 100vh;
+  position: relative;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-nav {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.nav-logo {
+  width: 60px;
+  height: auto;
+}
+
+.contact-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e0b045;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.return-home {
+  display: block;
+  margin-top: 20px;
+  color: #e0b045;
+  text-align: center;
+}
+
+.site-footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #e0b045;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
