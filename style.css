@@ -211,23 +211,22 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
     background-color: #e6c200;
 }
 .contact-page {
-  background-image: url('contact-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url('contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; /* keeps original aspect ratio */
+    background-position: center;
+    background-color: #000; /* fallback behind transparent parts */
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-page::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* dim effect */
+    z-index: -1;
 }
 
 .contact-container {
