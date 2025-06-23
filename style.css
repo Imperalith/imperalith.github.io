@@ -231,3 +231,117 @@ footer{text-align:center;padding:2rem;background:#14171c;color:#888;font-size:.9
   color: #ddd;
   text-decoration: underline;
 }
+
+/* ───────── CONTACT PAGE FINAL FIX ───────── */
+.top-nav {
+  background: #0d1117;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.nav-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Contact Page */
+.contact-page {
+  min-height: 100vh;
+  background: url('contact-bg.jpg') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 40px;
+  position: relative;
+  flex-direction: column;
+}
+
+.contact-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.contact-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);  /* Black + 0.5 opacity */
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: auto;
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f0b90b;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ddb207;
+}
+
+.return-home {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #ddd;
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background: #0d1117;
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
