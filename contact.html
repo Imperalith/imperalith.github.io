@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact — The Imperalith Fund</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact - The Imperalith Fund</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="favicon.png" alt="Logo" class="favicon" />
+        </div>
+    </nav>
 
-  <nav class="navbar">
-    <div class="logo">The Imperalith Fund</div>
-    <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#portfolio">Portfolio</a></li>
-      <li><a href="index.html#research">Research</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="contact-page">
     <div class="contact-container">
-      <h2>Contact Us</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Subject" required>
-        <textarea rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <a href="index.html" class="back-home">← Return to Home</a>
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <a href="index.html" class="return-link">← Return to Home</a>
+        </div>
     </div>
-  </div>
 
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer-credit">© 2025 The Imperalith Fund. All rights reserved.</p>
+    </footer>
 </body>
 </html>
