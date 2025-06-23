@@ -230,11 +230,6 @@ ul {
 }
 
 /* ───────── RESPONSIVE ───────── */
-/* Show hamburger only on small screens */
-.hamburger {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -246,8 +241,14 @@ ul {
     border-radius: 6px;
     cursor: pointer;
     z-index: 9999;
+    /* Hide hamburger on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none !important;
   }
+}
 
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -261,12 +262,8 @@ ul {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 1000;
   }
-
   .nav-links.open {
     display: flex;
-  }
-}
-
   }
   .hero-overlay {
     padding: 24px;
