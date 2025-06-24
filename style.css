@@ -365,3 +365,8 @@ ul {
     display: flex;
   }
 }
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+  color: #cccccc; /* darker gray */
+}
