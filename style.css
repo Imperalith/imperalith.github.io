@@ -325,3 +325,43 @@ ul {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* Hide hamburger on large screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    background: transparent;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background: #1a1f26;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
