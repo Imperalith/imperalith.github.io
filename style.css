@@ -241,33 +241,14 @@ ul {
     border-radius: 6px;
     cursor: pointer;
     z-index: 9999;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    top: 75px;
-    right: 20px;
-    background: #1a1f26;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-}
-
+    /* Hide hamburger on larger screens */
 @media (min-width: 769px) {
   .hamburger {
     display: none !important;
   }
 }
 
+  }
   .nav-links {
     display: none;
     flex-direction: column;
