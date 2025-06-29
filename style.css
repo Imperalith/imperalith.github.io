@@ -373,11 +373,10 @@ ul {
 
 body.portfolio-page {
   background-image: url('portfoliobackground.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: top center;
-  background-attachment: scroll;
-  background-color: #000; /* fallback in case image doesn't fill whole screen */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .portfolio-content {
