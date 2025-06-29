@@ -387,3 +387,18 @@ body.portfolio-page {
   margin: 8rem auto;
   border-radius: 12px;
 }
+
+/* ───────── FIX PORTFOLIO PAGE SPACING ───────── */
+body.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.portfolio-content {
+  margin: 6rem auto 2rem auto; /* Reduce bottom margin */
+}
