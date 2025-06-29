@@ -377,6 +377,8 @@ body.portfolio-page {
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 .portfolio-content {
