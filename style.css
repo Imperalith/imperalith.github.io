@@ -402,3 +402,24 @@ main {
 .portfolio-content {
   margin: 6rem auto 2rem auto; /* Reduce bottom margin */
 }
+
+/* ───────── REMOVE NAVY BAR FROM PORTFOLIO PAGE ───────── */
+body.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('portfoliobackground.jpg') center center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  flex: 1;
+}
+
+.portfolio-content {
+  margin: 6rem auto 2rem auto;
+}
+
+.site-footer {
+  background: transparent;
+}
