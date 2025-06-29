@@ -418,25 +418,6 @@ body.portfolio-page {
   background: transparent;
 }
 
-/* ───────── SCROLLBAR FOR PORTFOLIO PAGE ───────── */
-body.portfolio-page {
-  overflow-y: scroll;
-}
-
-/* Optional: Custom Scrollbar Styling */
-body.portfolio-page::-webkit-scrollbar {
-  width: 10px;
-}
-
-body.portfolio-page::-webkit-scrollbar-track {
-  background: #1a1f26;
-}
-
-body.portfolio-page::-webkit-scrollbar-thumb {
-  background-color: #FFD700;
-  border-radius: 6px;
-}
-
 /* ───────── MATCH RESEARCH PAGE SCROLL STRUCTURE ───────── */
 body.portfolio-page {
   background: url('portfoliobackground.jpg') no-repeat center center fixed;
@@ -472,19 +453,4 @@ body.portfolio-page {
   font-size: 0.9rem;
   margin-top: auto;
   background: transparent;
-}
-
-/* Custom scrollbar with same thickness but correct color */
-::-webkit-scrollbar {
-  width: 16px; /* keep it thick like before */
-}
-
-::-webkit-scrollbar-track {
-  background: #0f0f0f; /* same dark background as research */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d0d0d0; /* gray like Research page */
-  border-radius: 8px;
-  border: 3px solid #0f0f0f; /* makes it look inset */
 }
