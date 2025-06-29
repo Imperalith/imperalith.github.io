@@ -372,12 +372,12 @@ ul {
 }
 
 body.portfolio-page {
-  background: url('portfoliobackground.jpg') no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  color: white;
-  margin: 0;
-  padding: 0;
+  background-image: url('portfoliobackground.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  background-color: #000; /* fallback in case image doesn't fill whole screen */
 }
 
 .portfolio-content {
