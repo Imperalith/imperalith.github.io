@@ -405,15 +405,9 @@ main {
 
 /* ───────── REMOVE NAVY BAR FROM PORTFOLIO PAGE ───────── */
 body.portfolio-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background: url('portfoliobackground.jpg') center center / cover no-repeat;
-  background-attachment: fixed;
-}
-
-main {
-  flex: 1;
+  background: url('portfoliobackground.jpg') center center / cover no-repeat fixed;
+  background-color: #000;
+  overflow-y: auto;
 }
 
 .portfolio-content {
