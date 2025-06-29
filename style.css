@@ -372,13 +372,12 @@ ul {
 }
 
 body.portfolio-page {
+  background: url('portfoliobackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
   margin: 0;
   padding: 0;
-  background-image: url('portfoliobackground.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: auto; /* This prevents zoom/stretch */
 }
 
 .portfolio-content {
