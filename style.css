@@ -351,7 +351,7 @@ body.portfolio-page {
   color: white;
   width: 100%;
   max-width: 850px;
-  margin: 120px auto 0 auto; /* TOP | RIGHT | BOTTOM | LEFT */
+  margin: 40px auto 0 auto; /* <-- lowered from 120px to 40px */
   padding: 30px 40px;
   border-radius: 20px;
   text-align: left;
