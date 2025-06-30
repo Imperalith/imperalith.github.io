@@ -374,7 +374,8 @@ ul {
 body.portfolio-page {
   background-image: url('portfoliobackground.jpg');
   background-size: cover;
-  background-position: center 5%;
+  background-position-y: 15%;
+  background-position-x: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
