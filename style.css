@@ -420,7 +420,7 @@ body.portfolio-page {
 
 /* ───────── MATCH RESEARCH PAGE SCROLL STRUCTURE ───────── */
 body.portfolio-page {
-  background: url('portfoliobackground.jpg') no-repeat center 70px fixed;
+  background: url('portfoliobackground.jpg') no-repeat center 50px fixed;
   background-size: cover;
   background-color: #000;
   margin: 0;
