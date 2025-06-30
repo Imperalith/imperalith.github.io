@@ -156,12 +156,17 @@ ul {
 
 /* ───────── CONTACT PAGE ───────── */
 .contact-page {
-  background: url('contact-bg.jpg') center center / cover no-repeat fixed;
+  background-image: url('contact-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
 }
+
 .contact-container {
   flex-grow: 1;
   display: flex;
@@ -405,5 +410,14 @@ body.portfolio-page {
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 }
