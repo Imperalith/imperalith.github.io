@@ -168,6 +168,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
+  min-height: calc(100vh - 100px); /* Ensure full height minus navbar */
 }
 .contact-box {
   background: rgba(0, 0, 0, 0.75);
@@ -178,6 +179,7 @@ ul {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
+  margin: 0 auto; /* horizontal centering fallback */
 }
 .contact-box h2 {
   margin-bottom: 24px;
