@@ -39,24 +39,26 @@
   </header>
   <!-- ╚══════════════════════════════╝ -->
 
-<!-- ===== LIVE STOCK TICKER ===== -->
-<div class="tradingview-widget-container" style="margin-bottom: -5px; position: relative; z-index: 2;">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-    "symbols": [
-      { "proName": "NASDAQ:AAPL", "title": "Apple" },
-      { "proName": "NASDAQ:NVDA", "title": "NVIDIA" },
-      { "proName": "NYSE:VST", "title": "Vistra" },
-      { "proName": "NYSE:PG", "title": "Procter & Gamble" },
-      { "proName": "NYSE:BRK.B", "title": "Berkshire Hathaway" }
-    ],
-    "theme": "dark",
-    "isTransparent": true,
-    "displayMode": "regular",
-    "locale": "en"
-  }
-  </script>
+<!-- ===== OVERLAPPING TICKER ===== -->
+<div style="position: relative; z-index: 10; margin-top: -40px;">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        { "proName": "NASDAQ:AAPL", "title": "Apple" },
+        { "proName": "NASDAQ:NVDA", "title": "NVIDIA" },
+        { "proName": "NYSE:VST", "title": "Vistra" },
+        { "proName": "NYSE:PG", "title": "Procter & Gamble" },
+        { "proName": "NYSE:BRK.B", "title": "Berkshire Hathaway" }
+      ],
+      "theme": "dark",
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+    </script>
+  </div>
 </div>
 <!-- ===== END TICKER ===== -->
 
