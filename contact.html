@@ -145,6 +145,11 @@
   <script>
     const form = document.getElementById("contactForm");
     const confirmation = document.getElementById("confirmation-message");
+    
+    // Clear confirmation message on page load
+    window.addEventListener("load", () => {
+      confirmation.textContent = "";
+    });
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
