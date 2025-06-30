@@ -1,92 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Imperalith Fund</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Imperalith Capital Management</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Imperalith</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="investment-research.html">Research</a>
+          <a href="founder.html">Founder</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <!-- ╔═══════════ NAVBAR ═══════════╗ -->
-<nav class="navbar">
-  <div class="logo">The Imperalith Fund</div>
-  
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
-  
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="investment-research.html">Research</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="founder.html">Founder</a></li>
-  </ul>
-</nav>
-  <!-- ╚══════════════════════════════╝ -->
+    <main>
+      <!-- Hero Section with MP4 -->
+      <section class="hero">
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="skyline.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay">
+          <h1>The Imperalith Fund</h1>
+          <p>Conviction. Patience. Results.</p>
+        </div>
+      </section>
 
-<header class="hero">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="herobackground.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <div class="hero-overlay">
-    <h1>The Imperalith Fund</h1>
-    <p>
-      A solo-managed equity research fund designed and led by Josh Zhuang.
-      Powered by long-term thinking, value investing, and macro insight.
-    </p>
-    <a href="#about" class="cta-button">Learn More</a>
-  </div>
-</header>
+      <!-- Intro Section -->
+      <section class="homepage-intro">
+        <div class="intro-overlay">
+          <h2>What is Imperalith?</h2>
+          <p>
+            The Imperalith Fund is an independent equity research initiative created to explore value investing, macro trends, and strategic capital deployment. 
+            Led by founder and portfolio manager <strong>Josh Zhuang</strong>, our mission is to uncover overlooked opportunities through deep fundamental research.
+          </p>
+          <a href="founder.html" class="cta-button">Meet the Founder</a>
+        </div>
+      </section>
 
-  <main>
+      <!-- Example Fund Section (optional placeholder) -->
+      <section class="fund-section">
+        <!-- Additional homepage content can go here -->
+      </section>
+    </main>
 
-<section class="fund-section">
-  <video autoplay muted loop playsinline class="fund-video">
-    <source src="fund-bg.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <footer>
+      <p>© 2025 Imperalith Capital Management. All rights reserved.</p>
+    </footer>
 
-  <div class="fund-overlay">
-    <h2>Our Fund</h2>
-    <p>
-      Imperalith Capital Management currently manages The Imperalith Fund, a simulated 
-      value-oriented portfolio grounded in bottom-up research, macroeconomic awareness, and 
-      long-term capital appreciation. As of June 2025 the fund tracks over $30 000 in personal
-      and family-managed assets.
-    </p>
-  </div>
-</section>
-
-    <section id="research">
-      <h2>Investment Research</h2>
-      <p>
-        We publish independent equity research on selected public companies.
-        Reports are grounded in fundamental analysis and long-term intrinsic
-        value assessments. To access full reports, please
-        <a href="mailto:zhuangjosh05@gmail.com">contact us via email</a>.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:zhuangjosh05@gmail.com">zhuangjosh05@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/josh-zhuang/" target="_blank">Josh Zhuang</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const burger = document.getElementById('hamburger');
-    const nav    = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      burger.classList.toggle('open');
-    });
-  </script>
-</body>
-</html> 
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
