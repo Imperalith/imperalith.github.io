@@ -416,8 +416,12 @@ body.portfolio-page {
 @media (max-width: 768px) {
   .contact-page {
     background-size: cover !important;
+    background-position: center center !important;
     background-attachment: scroll !important;
-    background-position: center top !important;
     background-repeat: no-repeat !important;
+  }
+
+  .contact-container {
+    margin: 0 10px;
   }
 }
