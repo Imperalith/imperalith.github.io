@@ -391,20 +391,19 @@ body.portfolio-page {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
-
 @media (max-width: 768px) {
   body, html {
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover; /* more consistent full-fit across phones */
+    background-attachment: scroll; /* fixes zoom issue */
     background-color: #000;
   }
 
   .contact-section {
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
