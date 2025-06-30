@@ -3,82 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0d1117" />
   <title>The Imperalith Fund</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="navbar">
+  <!-- ╔═══════════ NAVBAR ═══════════╗ -->
+  <nav class="navbar">
     <div class="logo">The Imperalith Fund</div>
-    <nav>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="investment-research.html">Research</a></li>
-        <li><a href="founder.html">Founder</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment-research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="founder.html">Founder</a></li>
+    </ul>
+  </nav>
+  <!-- ╚══════════════════════════════╝ -->
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <video autoplay loop muted playsinline class="hero-video">
-      <source src="nyc3.mp4" type="video/mp4" />
+  <!-- ╔═══════════ HERO VIDEO ═══════════╗ -->
+  <header class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="herobackground.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
-    <div class="hero-content">
-      <h1>Capital With Conviction</h1>
-      <p>Long-term focus. Deep research. Uncompromising value.</p>
+    <div class="hero-overlay">
+      <h1>The Imperalith Fund</h1>
+      <p>
+        A solo-managed equity research fund designed and led by Josh Zhuang.
+        Powered by long-term thinking, value investing, and macro insight.
+      </p>
+      <a href="#about" class="cta-button">Learn More</a>
     </div>
-  </section>
+  </header>
+  <!-- ╚══════════════════════════════╝ -->
 
-  <!-- About the Firm -->
-  <section class="content-section">
-    <h2>About the Firm</h2>
-    <p>
-      Imperalith is built on a conviction-driven philosophy that prioritizes value, patience, and contrarian insight.
-      <br />
-      <a href="portfolio.html">Explore our portfolio</a>, <a href="investment-research.html">read our investment research</a>, or
-      <a href="founder.html">learn more about our founder’s philosophy and background</a>.
-    </p>
-  </section>
+<!-- ===== LIVE STOCK TICKER ===== -->
+<div class="tradingview-widget-container" style="margin-top: -10px;">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+    "symbols": [
+      { "proName": "NASDAQ:AAPL", "title": "Apple" },
+      { "proName": "NASDAQ:NVDA", "title": "NVIDIA" },
+      { "proName": "NYSE:VST", "title": "Vistra" },
+      { "proName": "NYSE:PG", "title": "Procter & Gamble" },
+      { "proName": "NYSE:BRK.B", "title": "Berkshire Hathaway" }
+    ],
+    "theme": "dark",
+    "isTransparent": true,
+    "displayMode": "regular",
+    "locale": "en"
+  }
+  </script>
+</div>
+<!-- ===== END TICKER ===== -->
 
-  <!-- Our Portfolio -->
-  <section class="content-section">
-    <h2>Our Portfolio</h2>
-    <p>
-      We invest in high-conviction, fundamentally sound companies with sustainable moats and asymmetric return potential. View our current holdings and thesis breakdowns on the <a href="portfolio.html">Portfolio page</a>.
-    </p>
-  </section>
+<!-- ===== KEY METRICS ===== -->
+<section style="background-color: #0d0d0d; color: white; padding: 60px 20px;">
+  <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 30px;">Imperalith Key Metrics</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: auto;">
+    <div style="background: #111; padding: 30px; border-radius: 16px; flex: 1 1 200px; max-width: 250px; text-align: center;">
+      <h3 style="font-size: 1.5rem;">AUM</h3>
+      <p>$28,300</p>
+    </div>
+    <div style="background: #111; padding: 30px; border-radius: 16px; flex: 1 1 200px; max-width: 250px; text-align: center;">
+      <h3 style="font-size: 1.5rem;">YTD Return</h3>
+      <p>+6.21%</p>
+    </div>
+    <div style="background: #111; padding: 30px; border-radius: 16px; flex: 1 1 200px; max-width: 250px; text-align: center;">
+      <h3 style="font-size: 1.5rem;">Reports Published</h3>
+      <p>11</p>
+    </div>
+    <div style="background: #111; padding: 30px; border-radius: 16px; flex: 1 1 200px; max-width: 250px; text-align: center;">
+      <h3 style="font-size: 1.5rem;">Sectors Covered</h3>
+      <p>Tech, Utilities, Consumer</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Investment Research -->
-  <section class="content-section">
-    <h2>Investment Research</h2>
-    <p>
-      Our research library features deep dives into market trends, company models, and macroeconomic tailwinds. Visit the <a href="investment-research.html">Research section</a> to explore our latest insights.
-    </p>
-  </section>
+<!-- ===== FEATURED INSIGHT ===== -->
+<section style="background-color: #1a1a1a; color: white; padding: 60px 20px;">
+  <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 30px;">Featured Insight</h2>
+  <div style="max-width: 800px; margin: auto; background: #111; padding: 30px; border-radius: 16px;">
+    <h3 style="font-size: 1.4rem;">Why Vistra Corp Might Be the Most Mispriced Utility in 2025</h3>
+    <p style="margin-top: 10px; line-height: 1.6;">We believe the market is severely underestimating Vistra’s generation upside and regulatory tailwinds. Our latest report dissects balance sheet flexibility, FCF potential, and forward valuation under various rate regimes.</p>
+    <a href="investment-research.html" style="display: inline-block; margin-top: 20px; color: #ffd700; text-decoration: none;">→ Read Full Research</a>
+  </div>
+</section>
+  
+  <main>
 
-  <!-- Founder Section -->
-  <section class="content-section">
-    <h2>Meet the Founder</h2>
-    <p>
-      From HVAC school to equity markets, our founder’s journey reflects the grit behind Imperalith’s core. Learn more about his story and investing framework on the <a href="founder.html">Founder page</a>.
-    </p>
-  </section>
+    <!-- ╔═══════════ FUND VIDEO SECTION ═══════════╗ -->
+    <section class="fund-section">
+      <video autoplay muted loop playsinline class="fund-video">
+        <source src="fund-bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-  <!-- Second Video Section -->
-  <section class="hero">
-    <video autoplay loop muted playsinline class="hero-video">
-      <source src="nyc2.mp4" type="video/mp4" />
-    </video>
-  </section>
+      <div class="fund-overlay">
+        <h2>Our Fund</h2>
+        <p>
+          Imperalith Capital Management currently manages The Imperalith Fund, a simulated 
+          value-oriented portfolio grounded in bottom-up research, macroeconomic awareness, and 
+          long-term capital appreciation. As of June 2025 the fund tracks over $30,000 in personal
+          and family-managed assets.
+        </p>
+      </div>
+    </section>
+    <!-- ╚══════════════════════════════════════════╝ -->
 
-  <footer class="footer">
-    <p>&copy; 2025 The Imperalith Fund. All rights reserved.</p>
+    <!-- ╔═══════════ RESEARCH SECTION ═══════════╗ -->
+    <section id="research">
+      <h2>Investment Research</h2>
+      <p>
+        We publish independent equity research on selected public companies.
+        Reports are grounded in fundamental analysis and long-term intrinsic
+        value assessments. To access full reports, please
+        <a href="mailto:zhuangjosh05@gmail.com">contact us via email</a>.
+      </p>
+    </section>
+    <!-- ╚════════════════════════════════════════╝ -->
+
+    <!-- ╔═══════════ CONTACT SECTION ═══════════╗ -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:zhuangjosh05@gmail.com">zhuangjosh05@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/josh-zhuang/" target="_blank">Josh Zhuang</a></p>
+    </section>
+    <!-- ╚═══════════════════════════════════════╝ -->
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
   </footer>
+
+  <!-- ╔═══════════ JS FOR BURGER MENU ═══════════╗ -->
+  <script>
+    const burger = document.getElementById('hamburger');
+    const nav = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      burger.classList.toggle('open');
+    });
+  </script>
+  <!-- ╚═════════════════════════════════════════╝ -->
+
 </body>
 </html>
