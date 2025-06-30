@@ -401,14 +401,3 @@ body.portfolio-page {
   border-radius: 5px;
   font-weight: bold;
 }
-
-
-.research-container {
-  background-color: rgba(25, 25, 25, 0.45); /* was too dark at 0.85 */
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  max-width: 900px;
-  margin: 60px auto;
-  color: white;
-}
