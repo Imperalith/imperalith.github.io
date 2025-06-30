@@ -390,3 +390,30 @@ body.portfolio-page {
   margin: 20px auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background-attachment: scroll !important;
+  }
+
+  .hero video,
+  .fund-video {
+    object-fit: contain !important;
+    height: auto !important;
+  }
+
+  .portfolio-page {
+    background-size: contain !important;
+    background-position: top center !important;
+    background-attachment: scroll !important;
+  }
+
+  .contact-page {
+    background-size: contain !important;
+    background-position: top center !important;
+    background-attachment: scroll !important;
+  }
+}
