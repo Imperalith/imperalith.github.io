@@ -365,3 +365,21 @@ body.portfolio-page {
 .portfolio-content h2 {
   text-align: center;
 }
+
+.founder-section {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.founder-photo {
+  width: 200px;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
