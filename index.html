@@ -3,99 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Imperalith Fund</title>
   <meta name="theme-color" content="#0d1117" />
+  <title>The Imperalith Fund</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- ╔═══════════ NAVBAR ═══════════╗ -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="logo">The Imperalith Fund</div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="investment-research.html">Research</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="founder.html">Founder</a></li>
-    </ul>
-  </nav>
-  <!-- ╚══════════════════════════════╝ -->
-
-  <header class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="herobackground.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-overlay">
-      <h1>The Imperalith Fund</h1>
-      <p>
-        A solo-managed equity research fund designed and led by Josh Zhuang.
-        Powered by long-term thinking, value investing, and macro insight.
-      </p>
-      <a href="#about" class="cta-button">Learn More</a>
-    </div>
+    <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="investment-research.html">Research</a></li>
+        <li><a href="founder.html">Founder</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="nyc3.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1>Capital With Conviction</h1>
+      <p>Long-term focus. Deep research. Uncompromising value.</p>
+    </div>
+  </section>
 
-    <section class="fund-section">
-      <video autoplay muted loop playsinline class="fund-video">
-        <source src="fund-bg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="fund-overlay">
-        <h2>Our Fund</h2>
-        <p>
-          Imperalith Capital Management currently manages The Imperalith Fund, a simulated 
-          value-oriented portfolio grounded in bottom-up research, macroeconomic awareness, and 
-          long-term capital appreciation. As of June 2025 the fund tracks over $30,000 in personal
-          and family-managed assets.
-        </p>
-      </div>
-    </section>
+  <!-- About the Firm -->
+  <section class="content-section">
+    <h2>About the Firm</h2>
+    <p>
+      Imperalith is built on a conviction-driven philosophy that prioritizes value, patience, and contrarian insight.
+      <br />
+      <a href="portfolio.html">Explore our portfolio</a>, <a href="investment-research.html">read our investment research</a>, or
+      <a href="founder.html">learn more about our founder’s philosophy and background</a>.
+    </p>
+  </section>
 
-    <!-- ╔═══════════ OVERVIEW SECTION ═══════════╗ -->
-    <section class="overview">
-      <h2>About the Firm</h2>
-      <p>
-        Imperalith is built on a conviction-driven philosophy that prioritizes value, patience,
-        and contrarian insight. Explore our portfolio, read our investment research, or learn
-        more about our founder’s philosophy and background.
-      </p>
-    </section>
-    <!-- ╚═══════════════════════════════════════╝ -->
+  <!-- Our Portfolio -->
+  <section class="content-section">
+    <h2>Our Portfolio</h2>
+    <p>
+      We invest in high-conviction, fundamentally sound companies with sustainable moats and asymmetric return potential. View our current holdings and thesis breakdowns on the <a href="portfolio.html">Portfolio page</a>.
+    </p>
+  </section>
 
-    <section id="research">
-      <h2>Investment Research</h2>
-      <p>
-        We publish independent equity research on selected public companies.
-        Reports are grounded in fundamental analysis and long-term intrinsic
-        value assessments. To access full reports, please
-        <a href="mailto:zhuangjosh05@gmail.com">contact us via email</a>.
-      </p>
-    </section>
+  <!-- Investment Research -->
+  <section class="content-section">
+    <h2>Investment Research</h2>
+    <p>
+      Our research library features deep dives into market trends, company models, and macroeconomic tailwinds. Visit the <a href="investment-research.html">Research section</a> to explore our latest insights.
+    </p>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:zhuangjosh05@gmail.com">zhuangjosh05@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/josh-zhuang/" target="_blank">Josh Zhuang</a></p>
-    </section>
-  </main>
+  <!-- Founder Section -->
+  <section class="content-section">
+    <h2>Meet the Founder</h2>
+    <p>
+      From HVAC school to equity markets, our founder’s journey reflects the grit behind Imperalith’s core. Learn more about his story and investing framework on the <a href="founder.html">Founder page</a>.
+    </p>
+  </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
+  <!-- Second Video Section -->
+  <section class="hero">
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="nyc2.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 The Imperalith Fund. All rights reserved.</p>
   </footer>
-
-  <script>
-    const burger = document.getElementById('hamburger');
-    const nav = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      burger.classList.toggle('open');
-    });
-  </script>
 </body>
 </html>
