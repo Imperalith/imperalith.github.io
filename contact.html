@@ -21,24 +21,6 @@
       margin: 0;
     }
 
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 20px;
-      position: absolute;
-      top: 75px;
-      right: 20px;
-      background: #1a1f26;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-    }
-
-    .nav-links.open {
-      display: flex;
-    }
-
     .hamburger {
       background: none;
       border: 2px solid #fdd835;
@@ -50,6 +32,11 @@
       display: none;
     }
 
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
     @media (max-width: 768px) {
       .hamburger {
         display: block;
@@ -57,6 +44,16 @@
 
       .nav-links {
         display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        background: #1a1f26;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
       }
 
       .nav-links.open {
@@ -78,7 +75,6 @@
 </head>
 
 <body class="contact-page">
-
   <!-- NAVBAR -->
   <header>
     <nav class="navbar">
