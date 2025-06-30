@@ -1,3 +1,4 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,33 +84,30 @@
       background-color: rgba(0, 255, 136, 0.1);
       padding: 8px 12px;
       border-radius: 8px;
-      display: inline-block;
+      display: none; /* hide initially */
     }
   </style>
 </head>
 
 <body class="contact-page">
   <header>
-  <!-- ╔═══════════ NAVBAR ═══════════╗ -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="/" onclick="location.href='/'" style="text-decoration: none; color: #FFD700;">
-        The Imperalith Fund
-      </a>
-    </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="investment-research.html">Research</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="founder.html">Founder</a></li>
-    </ul>
-  </nav>
-  <!-- ╚══════════════════════════════╝ -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/" onclick="location.href='/'" style="text-decoration: none; color: #FFD700;">
+          The Imperalith Fund
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="investment-research.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="founder.html">Founder</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- CONTACT FORM -->
   <div class="contact-container">
     <div class="contact-box">
       <h2>Contact Us</h2>
@@ -127,12 +125,10 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
   </footer>
 
-  <!-- SCRIPT TO TOGGLE NAV -->
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
@@ -142,14 +138,13 @@
     });
   </script>
 
-  <!-- INTERCEPT FORM SUBMIT -->
   <script>
     const form = document.getElementById("contactForm");
     const confirmation = document.getElementById("confirmation-message");
-    
-    // Clear confirmation message on page load
+
     window.addEventListener("load", () => {
       confirmation.textContent = "";
+      confirmation.style.display = "none";
     });
 
     form.addEventListener("submit", async (e) => {
@@ -167,11 +162,14 @@
         if (response.ok) {
           form.reset();
           confirmation.textContent = "Message sent!";
+          confirmation.style.display = "inline-block";
         } else {
           confirmation.textContent = "Something went wrong. Please try again.";
+          confirmation.style.display = "inline-block";
         }
       } catch (error) {
         confirmation.textContent = "Failed to send. Try again later.";
+        confirmation.style.display = "inline-block";
       }
     });
   </script>
