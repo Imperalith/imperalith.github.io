@@ -347,11 +347,12 @@ body.portfolio-page {
 }
 
 .portfolio-content {
-    max-width: 800px;
-    margin: 50px auto; /* 50px top/bottom, auto left/right centers the box */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.45); /* semi-transparent black */
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* optional soft shadow */
+  background-color: rgba(0, 0, 0, 0.45); /* Slightly transparent black */
+  color: white;
+  max-width: 900px;
+  margin: 120px auto; /* Centers horizontally with top margin */
+  padding: 30px 40px;
+  border-radius: 20px; /* More rounded */
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
