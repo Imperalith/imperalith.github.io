@@ -347,12 +347,15 @@ body.portfolio-page {
 }
 
 .portfolio-content {
-  background-color: rgba(0, 0, 0, 0.45); /* Slightly transparent black */
+  background-color: rgba(0, 0, 0, 0.45);
   color: white;
-  max-width: 900px;
-  margin: 120px auto; /* Centers horizontally with top margin */
+  width: 100%;
+  max-width: 850px;
+  margin: 120px auto 0 auto; /* TOP | RIGHT | BOTTOM | LEFT */
   padding: 30px 40px;
-  border-radius: 20px; /* More rounded */
+  border-radius: 20px;
   text-align: left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: block;
+  position: relative;
 }
