@@ -3,107 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meet the Founder</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #0d1117;
-      color: #d1d5db;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .founder-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 20px 30px;
-    }
-
-    .bio-text {
-      flex: 1;
-      max-width: 500px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      padding: 20px;
-    }
-
-    .founder-photo {
-      flex: 1;
-      max-width: 400px;
-      padding: 20px;
-    }
-
-    .founder-photo img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    .casual-photo {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .casual-photo img {
-      width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: white;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .founder-container {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .bio-text, .founder-photo {
-        max-width: 100%;
-      }
-    }
-  </style>
+  <title>Founder | The Imperalith Fund</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
 </head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="navbar-container">
-      <div class="logo"><a href="index.html">The Imperalith Fund</a></div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="founder.html">Founder</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Main Content -->
-  <h2 class="section-title">Meet the Founder</h2>
+<body style="background-color: #0d1117; color: #fff;">
+  <!-- ╔═══════════ NAVBAR ═══════════╗ -->
+  <nav class="navbar">
+    <div class="logo">The Imperalith Fund</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment-research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="founder.html">Founder</a></li>
+    </ul>
+  </nav>
+  <!-- ╚══════════════════════════════╝ -->
 
-  <div class="founder-container">
-    <div class="founder-photo">
-      <img src="suitformal.jpg" alt="Founder Formal Photo" />
-    </div>
-    <div class="bio-text">
-      I’m the founder and portfolio manager of The Imperalith Fund. My investment approach blends bottom-up value analysis with a global macro lens. I focus on identifying profitable opportunities across public markets through independent research and fundamental conviction.
-    </div>
-  </div>
+  <main>
+    <!-- ╔════════ ABOUT SECTION ═════════╗ -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Josh Zhuang</h2>
+        <p>
+          I’m the founder and portfolio manager of
+          <strong>The Imperalith Fund</strong>. My investment approach blends
+          bottom-up value analysis with a global macro lens. I focus on identifying
+          profitable opportunities across public markets through independent
+          research and fundamental conviction.
+        </p>
+      </div>
 
-  <div class="casual-photo">
-    <img src="casualfinal.jpg" alt="Founder Casual Photo" />
-  </div>
+      <div class="about-photos">
+        <figure class="about-img">
+          <img src="suitformal.jpg" alt="Formal portrait of Josh Zhuang" />
+          <figcaption>Formal studio portrait</figcaption>
+        </figure>
+
+        <figure class="about-img">
+          <img src="casualfinal.jpg" alt="Josh Zhuang on Shanghai’s Bund riverfront" />
+          <figcaption>Evening on Shanghai’s Bund riverfront</figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- ╚════════════════════════════════╝ -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('hamburger');
+    const nav    = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      burger.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
