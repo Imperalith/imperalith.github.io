@@ -349,7 +349,7 @@ body.portfolio-page {
 .portfolio-content {
   max-width: 700px;
   margin: 150px auto 80px auto;
-  background-color: rgba(0, 0, 0, 0.6); /* ← Change the opacity here (0.6 is lighter than 0.8) */
+  background-color: rgba(0, 0, 0, 0.45); /* ← Change the opacity here (0.6 is lighter than 0.8) */
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
