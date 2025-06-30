@@ -25,7 +25,7 @@
     }
 
     .research-container {
-      background-color: rgba(25, 25, 25, 0.8);
+      background-color: rgba(25, 25, 25, 0.85);
       padding: 40px;
       border-radius: 10px;
       max-width: 800px;
@@ -63,65 +63,74 @@
       font-size: 0.9rem;
     }
 
-    /* Mobile Dropdown Fix */
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 20px;
-      position: absolute;
-      top: 75px;
-      right: 20px;
-      background: #1a1f26;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(13, 17, 23, 0.95);
+      z-index: 999;
     }
 
-    .nav-links.open {
+    .logo {
+      color: #FFD700;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
       display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      border-bottom: 2px solid #FFD700;
     }
 
     .hamburger {
       display: none;
-      font-size: 1.5rem;
       background: none;
-      border: none;
-      color: #fff;
+      border: 2px solid #FFD700;
+      color: #FFD700;
+      font-size: 1.5rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        background: #1a1f26;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
       .hamburger {
         display: block;
-        cursor: pointer;
       }
-
-      .nav-links {
-        width: 200px;
-      }
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background: #0d1117;
-      color: #fff;
-    }
-
-    .navbar .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .nav-links li {
-      list-style: none;
-    }
-
-    .nav-links li a {
-      color: #fff;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -153,12 +162,12 @@
       </p>
       <a href="ImperalithNVDASample.pdf" class="button" download>Download Sample Report</a>
       <br>
-      <a href="index.html" style="display: block; margin-top: 15px; color: #FFD700;">← Return to Home</a>
+      <a href="index.html" style="display: block; margin-top: 20px; color: #FFD700;">← Return to Home</a>
     </div>
     <footer>© 2025 Imperalith Capital Management. All rights reserved.</footer>
   </div>
 
-  <!-- JavaScript for hamburger toggle -->
+  <!-- Hamburger Script -->
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
