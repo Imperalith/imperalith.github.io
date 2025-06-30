@@ -41,13 +41,13 @@
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
 
-    .formal-photo {
+    .casual-photo {
       display: flex;
       justify-content: center;
       padding: 20px;
     }
 
-    .formal-photo img {
+    .casual-photo img {
       width: 300px;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -61,7 +61,6 @@
       margin-top: 40px;
     }
 
-    /* Adjust for smaller screens */
     @media (max-width: 768px) {
       .founder-container {
         flex-direction: column;
@@ -95,16 +94,16 @@
   <h2 class="section-title">Meet the Founder</h2>
 
   <div class="founder-container">
+    <div class="founder-photo">
+      <img src="suitformal.jpg" alt="Founder Formal Photo" />
+    </div>
     <div class="bio-text">
       I’m the founder and portfolio manager of The Imperalith Fund. My investment approach blends bottom-up value analysis with a global macro lens. I focus on identifying profitable opportunities across public markets through independent research and fundamental conviction.
     </div>
-    <div class="founder-photo">
-      <img src="casualfinal.jpg" alt="Founder Casual Photo" />
-    </div>
   </div>
 
-  <div class="formal-photo">
-    <img src="suitformal.jpg" alt="Founder Formal Photo" />
+  <div class="casual-photo">
+    <img src="casualfinal.jpg" alt="Founder Casual Photo" />
   </div>
 </body>
 </html>
