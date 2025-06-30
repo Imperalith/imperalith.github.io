@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact | The Imperalith Fund</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" type="image/png" href="favicon.png"/>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <!-- ╔═══════════ NAVBAR ═══════════╗ -->
+  <style>
+    body.contact-page .site-footer {
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    body.contact-page .site-footer p {
+      color: #fff;
+      margin: 0;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 75px;
+      right: 20px;
+      background: #1a1f26;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .nav-links.open {
+      display: flex;
+    }
+
+    .hamburger {
+      background: none;
+      border: 2px solid #fdd835;
+      color: #fdd835;
+      padding: 8px 12px;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body class="contact-page">
+
+  <!-- NAVBAR -->
+  <header>
     <nav class="navbar">
       <div class="logo">The Imperalith Fund</div>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
@@ -21,37 +92,38 @@
         <li><a href="founder.html">Founder</a></li>
       </ul>
     </nav>
-    <!-- ╚══════════════════════════════╝ -->
+  </header>
 
-    <main>
-      <section class="contact-section">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+  <!-- CONTACT FORM -->
+  <div class="contact-container">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" style="color: #fdd835;">← Return to Home</a>
+      </div>
+    </div>
+  </div>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
+  </footer>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+  <!-- SCRIPT TO TOGGLE NAV -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
 
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
-    </footer>
-
-    <script>
-      const burger = document.getElementById('hamburger');
-      const nav    = document.getElementById('navLinks');
-      burger.addEventListener('click', () => {
-        nav.classList.toggle('open');
-        burger.classList.toggle('open');
-      });
-    </script>
-  </body>
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
 </html>
