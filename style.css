@@ -227,6 +227,13 @@ ul {
 
 /* ───────── RESPONSIVE ───────── */
 @media (max-width: 768px) {
+
+  .contact-page {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top center;
+  }
+
   .hamburger {
     display: block;
     font-size: 28px;
