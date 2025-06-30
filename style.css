@@ -347,11 +347,11 @@ body.portfolio-page {
 }
 
 .portfolio-content {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
   max-width: 700px;
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 0 auto 2rem;
-  text-align: left;
+  margin: 150px auto 80px auto;
+  background-color: rgba(0, 0, 0, 0.6); /* ← Change the opacity here (0.6 is lighter than 0.8) */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
 }
