@@ -425,3 +425,18 @@ body.portfolio-page {
     margin: 0 10px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .contact-page {
+    background-image: url('contact-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  .contact-container {
+    margin: 0 10px;
+  }
+}
