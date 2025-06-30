@@ -430,7 +430,7 @@ body.portfolio-page {
 .portfolio-page .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: 120px; /* This shifts everything down below the navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
