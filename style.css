@@ -227,10 +227,10 @@ ul {
 
 /* ───────── RESPONSIVE ───────── */
 @media (max-width: 768px) {
-
   .contact-page {
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: top center;
   }
 
