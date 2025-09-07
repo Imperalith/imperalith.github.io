@@ -2,29 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://imperalith.github.io/</loc>
-    <lastmod>2025-06-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://imperalith.com/</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://imperalith.github.io/research</loc>
-    <lastmod>2025-06-30</lastmod>
+    <loc>https://imperalith.com/portfolio.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://imperalith.github.io/contact</loc>
-    <lastmod>2025-06-30</lastmod>
+    <loc>https://imperalith.com/investment-research.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://imperalith.com/contact.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://imperalith.github.io/founder</loc>
-    <lastmod>2025-06-30</lastmod>
+    <loc>https://imperalith.com/founder.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
