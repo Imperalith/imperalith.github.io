@@ -3,9 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Force .github.io -> .com (path-preserving) -->
+  <script>
+    (function () {
+      var host = location.hostname.toLowerCase();
+      if (host.endsWith('github.io')) {
+        var target = 'https://imperalith.com' +
+          location.pathname.replace(/index\.html$/,'') +
+          (location.search || '') +
+          (location.hash || '');
+        if (location.href !== target) {
+          var m = document.createElement('meta');
+          m.name = 'robots'; m.content = 'noindex';
+          document.head.appendChild(m);
+          location.replace(target);
+        }
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://imperalith.com/portfolio.html">
+    <link rel="canonical" href="https://imperalith.com/portfolio.html">
+  </noscript>
+
   <meta name="description" content="See the active portfolio of Imperalith Capital — a value-driven equity research fund led by Josh Zhuang."/>
   <meta name="theme-color" content="#0f1115" />
   <title>Portfolio | Imperalith Capital</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://imperalith.com/portfolio.html" />
+
+  <!-- Open Graph (optional but helpful) -->
+  <meta property="og:url" content="https://imperalith.com/portfolio.html"/>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.png" />
   <style>
