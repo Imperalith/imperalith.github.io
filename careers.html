@@ -55,7 +55,13 @@
     }
     html,body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue","Noto Sans",sans-serif;}
     .navbar{position:fixed;top:0;left:0;width:100%;background:rgba(13,17,23,.95);backdrop-filter:saturate(120%) blur(2px);padding:20px 40px;z-index:999;display:flex;align-items:center;justify-content:space-between}
-    .logo a{color:var(--gold);text-decoration:none;font-weight:700;font-size:1.2rem}
+    .logo a{
+      color:var(--gold);
+      text-decoration:none;
+      font-weight:700;
+      font-size:1.5rem;   /* updated to match other pages */
+      line-height:1;      /* keeps spacing consistent */
+    }
     .nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
     .nav-links a{color:#fff;text-decoration:none}
     .nav-links a:hover{border-bottom:2px solid var(--gold)}
@@ -64,7 +70,7 @@
     .hero{
       padding-top:120px; /* offset navbar */
       padding-bottom:40px;
-      background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.5)), url('careersback.png') center/cover no-repeat fixed;
+      background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.5)), url('careerback.png') center/cover no-repeat fixed;
       text-align:center;
     }
 
