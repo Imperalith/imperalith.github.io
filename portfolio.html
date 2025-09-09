@@ -43,6 +43,21 @@
     html, body {
       background-color: #0f1115; /* match your dark theme */
     }
+    /* Contact line under holdings list */
+    .portfolio-contact {
+      margin-top: 16px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .portfolio-contact a {
+      color: #fdd835; /* gold */
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .portfolio-contact a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body class="portfolio-page">
@@ -83,7 +98,15 @@
           <li><strong>NVIDIA (NVDA):</strong> Flagship position in AI infrastructure and chip design</li>
           <li><strong>Apple (AAPL):</strong> Core holding driven by brand, ecosystem, and capital efficiency</li>
           <li><strong>Alphabet (GOOGL):</strong> Long-term compounder with asymmetric optionality</li>
+          <!-- Add more <li> entries here as needed -->
         </ul>
+
+        <!-- Contact line (stays below the list even if you add more <li> items) -->
+        <p class="portfolio-contact">
+          Have questions about our portfolio?
+          Email us at
+          <a href="mailto:researchteam@imperalith.com?subject=Portfolio%20Question">researchteam@imperalith.com</a>.
+        </p>
 
         <br>
 
@@ -118,7 +141,7 @@
     });
   </script>
 
-    <!-- Hidden SEO link for portfolio -->
+  <!-- Hidden SEO link for portfolio -->
   <p style="font-size: 1px; color: #0f1115; position: absolute; left: -9999px;">
     <a href="portfolio.html" style="color: #0f1115;">View Portfolio</a>
   </p>
