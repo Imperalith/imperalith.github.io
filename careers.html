@@ -64,8 +64,12 @@
     .hero{
       padding-top:120px; /* offset navbar */
       padding-bottom:40px;
-      background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.5)), url('boardroom-bg.jpg') center/cover no-repeat fixed;
+      background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.5)), url('careerback.jpg') center/cover no-repeat fixed;
       text-align:center;
+    }
+
+    @media (max-width: 900px) {
+      .hero { background-attachment: scroll; } /* smoother on mobile */
     }
     .hero .wrap{max-width:1000px;margin:0 auto;padding:40px 24px}
     .eyebrow{color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-weight:700;font-size:.9rem}
