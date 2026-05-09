@@ -6,49 +6,79 @@
 }
 
 /* ───────── BASE ───────── */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   background: #0d1117;
   color: #f5f5f5;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
   color: #f5c542;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
 
 /* ───────── NAVBAR ───────── */
 nav.navbar {
-  background: #1a1f26;
-  padding: 20px 40px;
+  background: rgba(10, 12, 15, 0.52);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 20px 6.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .logo {
   font-size: 1.6rem;
-  font-weight: 700;
-  color: #FFD700;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
 }
+
+.logo a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.logo a:hover {
+  color: #FFD700 !important;
+  text-decoration: none !important;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 34px;
+  align-items: center;
 }
+
 .nav-links li a {
-  color: #FFD700;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: 0.3s;
+  opacity: 0.92;
 }
+
 .nav-links li a:hover {
-  color: #FFA500;
+  color: #FFD700;
+  text-decoration: none;
+  opacity: 1;
 }
 
 /* ───────── FOOTER ───────── */
@@ -64,40 +94,103 @@ nav.navbar {
 /* ───────── HERO ───────── */
 .hero {
   position: relative;
-  height: 90vh;
+  height: 100vh;
+  min-height: 680px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
 }
-.hero video {
+
+/* Hero video/image fills whole section */
+.hero video,
+.hero-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
 }
+
+/* Cinematic dark overlay integrated into background */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.58) 42%,
+      rgba(0, 0, 0, 0.22) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.08) 40%,
+      rgba(0, 0, 0, 0.72) 100%
+    );
+}
+
+/* This removes the ugly box and integrates the text into the video */
 .hero-overlay {
   position: relative;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
+  z-index: 2;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  max-width: 980px;
+  margin: 90px 0 0 6.5%;
+  text-align: left;
+  box-shadow: none;
 }
+
+/* Big institutional headline */
 .hero-overlay h1 {
-  font-size: 3rem;
-  color: #FFD700;
-  margin-bottom: 1rem;
+  font-size: clamp(3.4rem, 6vw, 6.3rem);
+  line-height: 1.02;
+  color: #ffffff;
+  margin-bottom: 24px;
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  max-width: 950px;
 }
+
+/* Hero subtext */
 .hero-overlay p {
-  font-size: 1.1rem;
+  font-size: clamp(1.12rem, 1.55vw, 1.45rem);
+  line-height: 1.55;
   margin-bottom: 1.5rem;
+  max-width: 810px;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 500;
 }
+
+/* Hero button: Bernhard-style outlined button */
+.hero-overlay a {
+  display: inline-block !important;
+  margin-top: 32px !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 15px 32px !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  transition: all 0.25s ease;
+}
+
+.hero-overlay a:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+/* Keeps old CTA buttons working elsewhere */
 .cta-button:hover {
   background: #e5be00;
 }
@@ -109,9 +202,11 @@ main {
   padding: 60px 40px;
   flex: 1;
 }
+
 section {
   margin-bottom: 3rem;
 }
+
 h2 {
   font-size: 2rem;
   color: #FFD700;
@@ -119,6 +214,7 @@ h2 {
   border-bottom: 1px solid #333;
   padding-bottom: 0.5rem;
 }
+
 ul {
   padding-left: 1.5rem;
   list-style: disc;
@@ -131,15 +227,18 @@ ul {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .about-text {
   flex: 1 1 300px;
 }
+
 .about-photos {
   display: flex;
   flex-direction: column;
   gap: 30px;
   flex: 0 0 380px;
 }
+
 .about-img {
   border: 1px solid #333;
   border-radius: 10px;
@@ -149,6 +248,7 @@ ul {
   font-size: 0.85rem;
   color: #ccc;
 }
+
 .about-img img {
   width: 100%;
   display: block;
@@ -162,14 +262,16 @@ ul {
   flex-direction: column;
   font-family: 'Inter', sans-serif;
 }
+
 .contact-container {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  min-height: calc(100vh - 100px); /* Ensure full height minus navbar */
+  min-height: calc(100vh - 100px);
 }
+
 .contact-box {
   background: rgba(0, 0, 0, 0.75);
   padding: 40px;
@@ -179,12 +281,14 @@ ul {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
-  margin: 0 auto; /* horizontal centering fallback */
+  margin: 0 auto;
 }
+
 .contact-box h2 {
   margin-bottom: 24px;
   font-size: 28px;
 }
+
 .contact-box input,
 .contact-box textarea {
   background: rgba(255, 255, 255, 0.1);
@@ -196,10 +300,12 @@ ul {
   font-size: 0.95rem;
   width: 100%;
 }
+
 .contact-box textarea {
   resize: vertical;
   min-height: 100px;
 }
+
 .contact-box button {
   padding: 12px;
   border: none;
@@ -210,9 +316,11 @@ ul {
   cursor: pointer;
   width: 100%;
 }
+
 .contact-box button:hover {
   background-color: #e6c200;
 }
+
 .contact-box a {
   display: block;
   margin-top: 16px;
@@ -220,6 +328,7 @@ ul {
   color: #FFD700;
   font-size: 0.9rem;
 }
+
 .contact-box input::placeholder,
 .contact-box textarea::placeholder {
   color: #cccccc;
@@ -227,6 +336,10 @@ ul {
 
 /* ───────── RESPONSIVE ───────── */
 @media (max-width: 768px) {
+  nav.navbar {
+    padding: 18px 24px;
+  }
+
   .hamburger {
     display: block;
     font-size: 28px;
@@ -257,12 +370,45 @@ ul {
     display: flex;
   }
 
+  .hero {
+    min-height: 650px;
+    height: 92vh;
+  }
+
+  .hero::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.84) 0%,
+        rgba(0, 0, 0, 0.68) 58%,
+        rgba(0, 0, 0, 0.44) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.38) 0%,
+        rgba(0, 0, 0, 0.12) 40%,
+        rgba(0, 0, 0, 0.76) 100%
+      );
+  }
+
   .hero-overlay {
-    padding: 24px;
+    margin: 90px 24px 0 24px;
+    max-width: calc(100% - 48px);
   }
 
   .hero-overlay h1 {
-    font-size: 2rem;
+    font-size: clamp(2.7rem, 11vw, 4.2rem);
+    margin-bottom: 20px;
+  }
+
+  .hero-overlay p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .hero-overlay a {
+    padding: 14px 24px !important;
+    font-size: 0.95rem;
   }
 
   .about-photos {
@@ -300,6 +446,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
@@ -353,7 +500,7 @@ body.portfolio-page {
   color: white;
   width: 100%;
   max-width: 850px;
-  margin: 40px auto 0 auto; /* <-- lowered from 120px to 40px */
+  margin: 40px auto 0 auto;
   padding: 30px 40px;
   border-radius: 20px;
   text-align: left;
