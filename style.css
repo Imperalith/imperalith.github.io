@@ -560,3 +560,7 @@ body.portfolio-page {
     display: none !important;
   }
 }
+
+.hero::after {
+  display: none !important;
+}
