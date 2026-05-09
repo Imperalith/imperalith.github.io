@@ -109,24 +109,77 @@
   </nav>
   <!-- ╚══════════════════════════════╝ -->
 
-  <!-- ╔═══════════ HERO VIDEO ═══════════╗ -->
-  <header class="hero">
-    <video autoplay class="hero-video" loop muted playsinline>
-      <source src="herobackground.mp4" type="video/mp4"/>
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-      <h1>The Imperalith Fund</h1>
-      <p>
-        A solo-managed equity research fund designed and led by Josh Zhuang.<br>
-        Powered by long-term thinking, value investing, and macro insight.
-      </p>
-      <a href="founder.html" class="hero-button">
-        Meet Our Founder →
-      </a>
-    </div>
-  </header>
-  <!-- ╚══════════════════════════════╝ -->
+<!-- ╔═══════════ HERO VIDEO ═══════════╗ -->
+<header class="hero" style="position: relative; height: 100vh; min-height: 680px; overflow: hidden; display: flex; align-items: center;">
+
+  <video autoplay class="hero-video" loop muted playsinline
+    style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+    <source src="herobackground.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video>
+
+  <div style="
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.18) 100%),
+      linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.05) 45%, rgba(0,0,0,0.70) 100%);
+  "></div>
+
+  <div class="hero-content" style="
+    position: relative;
+    z-index: 5;
+    max-width: 980px;
+    margin-left: 6.5%;
+    margin-top: 80px;
+    color: white;
+    text-align: left;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  ">
+    <h1 style="
+      font-size: clamp(3.5rem, 6vw, 6.4rem);
+      line-height: 1.02;
+      color: white;
+      margin-bottom: 24px;
+      font-weight: 850;
+      letter-spacing: -0.055em;
+      max-width: 980px;
+    ">
+      The Imperalith Fund
+    </h1>
+
+    <p style="
+      font-size: clamp(1.12rem, 1.55vw, 1.45rem);
+      line-height: 1.55;
+      max-width: 810px;
+      color: rgba(255,255,255,0.92);
+      font-weight: 500;
+    ">
+      A solo-managed equity research fund designed and led by Josh Zhuang.<br>
+      Powered by long-term thinking, value investing, and macro insight.
+    </p>
+
+    <a href="founder.html" style="
+      display: inline-block;
+      margin-top: 32px;
+      background: transparent;
+      color: white;
+      padding: 15px 32px;
+      border-radius: 0;
+      border: 1px solid rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-weight: 700;
+    ">
+      Meet Our Founder →
+    </a>
+  </div>
+
+</header>
+<!-- ╚══════════════════════════════╝ -->
 
   <!-- ===== OVERLAPPING TICKER ===== -->
   <div style="position: relative; z-index: 10; margin-top: -40px;">
