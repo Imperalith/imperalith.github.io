@@ -570,3 +570,117 @@ body.portfolio-page {
     margin-bottom: 20px;
   }
 }
+/* ───────── HERO TEXT FIX: SHOW TEXT WITHOUT BOX ───────── */
+
+.hero {
+  position: relative !important;
+  height: 100vh !important;
+  min-height: 680px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  overflow: hidden !important;
+}
+
+.hero video,
+.hero-video {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 0 !important;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.55) 42%,
+      rgba(0, 0, 0, 0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.08) 40%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+}
+
+/* Works whether your HTML says hero-overlay or hero-content */
+.hero-overlay,
+.hero-content {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 5 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+
+  max-width: 950px !important;
+  margin-left: 6.5% !important;
+  margin-top: 70px !important;
+  text-align: left !important;
+  color: #ffffff !important;
+}
+
+.hero-overlay h1,
+.hero-content h1 {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  color: #ffffff !important;
+  font-size: clamp(3.4rem, 6vw, 6.3rem) !important;
+  line-height: 1.02 !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.055em !important;
+  margin-bottom: 24px !important;
+  max-width: 950px !important;
+}
+
+.hero-overlay p,
+.hero-content p {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-size: clamp(1.12rem, 1.55vw, 1.45rem) !important;
+  line-height: 1.55 !important;
+  max-width: 800px !important;
+  font-weight: 500 !important;
+}
+
+.hero-overlay a,
+.hero-content a,
+.hero-button {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  margin-top: 32px !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 15px 32px !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+}
+
+.hero-overlay a:hover,
+.hero-content a:hover,
+.hero-button:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
