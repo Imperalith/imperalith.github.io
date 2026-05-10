@@ -564,3 +564,58 @@ body.portfolio-page {
 .hero::after {
   display: none !important;
 }
+
+.hero-blue-box-wrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 56px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 20;
+}
+
+.hero-blue-box {
+  background-color: rgb(20, 74, 165);
+  color: white;
+  width: 100%;
+  padding: 56px 0;
+  box-sizing: border-box;
+}
+
+.hero-blue-box-inner {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding-left: 56px;
+  padding-right: 56px;
+  box-sizing: border-box;
+}
+
+.hero-blue-box-inner p {
+  max-width: 780px;
+  margin: 0;
+  color: white;
+  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .hero-blue-box-wrap {
+    padding: 0 24px;
+    margin-top: -24px;
+  }
+
+  .hero-blue-box {
+    padding: 40px 0;
+  }
+
+  .hero-blue-box-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-blue-box-inner p {
+    font-size: 18px;
+  }
+}
