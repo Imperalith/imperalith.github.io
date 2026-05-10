@@ -629,7 +629,7 @@ body.portfolio-page {
   position: absolute !important;
   left: 56px !important;
   right: 56px !important;
-  bottom: 0 !important;
+  bottom: 48px !important;
   top: auto !important;
   transform: none !important;
   z-index: 25 !important;
