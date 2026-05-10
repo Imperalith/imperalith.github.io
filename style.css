@@ -558,6 +558,20 @@ body.portfolio-page {
   display: none !important;
 }
 
+/* ───────── CITADEL-STYLE HERO TITLE ───────── */
+.hero-title {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 70.4px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #ffffff;
+  padding: 0 0 5px;
+  max-width: 850px;
+}
+
+/* ───────── CITADEL-STYLE BLUE HERO BOX ───────── */
 .hero-blue-box-wrap {
   position: absolute;
   left: 56px;
@@ -565,12 +579,10 @@ body.portfolio-page {
   bottom: 0;
   z-index: 25;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 .hero-blue-box {
-  background-color: rgb(20, 74, 165);
+  background-color: rgba(20, 74, 165, 0.93);
   color: white;
   width: 100%;
   padding: 56px 0;
@@ -589,19 +601,22 @@ body.portfolio-page {
   max-width: 780px;
   margin: 0;
   color: white;
-  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.45;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(2.7rem, 11vw, 4.2rem);
+    line-height: 1.08;
+  }
+
   .hero-blue-box-wrap {
     left: 24px;
     right: 24px;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
   }
 
   .hero-blue-box {
@@ -616,48 +631,4 @@ body.portfolio-page {
   .hero-blue-box-inner p {
     font-size: 18px;
   }
-}
-
-.hero-blue-box-wrap {
-  position: absolute !important;
-  left: 56px !important;
-  right: 56px !important;
-  bottom: 0 !important;
-  top: auto !important;
-  transform: none !important;
-  z-index: 25 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* FORCE HERO BLUE BOX TO BOTTOM OF HERO */
-.hero {
-  position: relative !important;
-}
-
-.hero-blue-box-wrap {
-  position: absolute !important;
-  left: 56px !important;
-  right: 56px !important;
-  bottom: 0 !important;
-  top: auto !important;
-  width: auto !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  z-index: 50 !important;
-  display: block !important;
-}
-
-.hero-blue-box {
-  width: 100% !important;
-  background-color: rgb(20, 74, 165) !important;
-  padding: 56px 0 !important;
-}
-
-.hero-title {
-  font-family: "Signifier", Georgia, serif;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 70.4px;
-  color: white;
 }
