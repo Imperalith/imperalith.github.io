@@ -326,38 +326,6 @@ ul {
   margin-bottom: 60px;
 }
 
-.fund-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.fund-overlay {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 35px 50px;
-  border-radius: 14px;
-  text-align: center;
-  color: white;
-}
-
-.fund-overlay h2 {
-  font-size: 2.2rem;
-  color: #FFD700;
-  margin-bottom: 1rem;
-}
-
-.fund-overlay p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
 /* ───────── PORTFOLIO PAGE FIXES ───────── */
 body.portfolio-page {
   background: url('portfoliobackground.jpg') no-repeat center 50px fixed;
@@ -630,5 +598,111 @@ body.portfolio-page {
 
   .hero-blue-box-inner p {
     font-size: 18px;
+  }
+}
+
+/* ───────── FIRM SNAPSHOT / METRICS ───────── */
+.firm-snapshot {
+  background: #f3f3f1;
+  color: #0f234f;
+  padding: 90px 56px;
+  margin: 0;
+}
+
+.firm-snapshot-intro {
+  max-width: 1100px;
+  margin: 0 auto 70px auto;
+}
+
+.firm-snapshot-intro p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #1a2b4f;
+  max-width: 1150px;
+}
+
+.firm-snapshot-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.snapshot-item {
+  padding: 22px 28px 10px 28px;
+  text-align: center;
+  border-left: 1px solid rgba(15, 35, 79, 0.18);
+}
+
+.snapshot-item:first-child {
+  border-left: none;
+}
+
+.snapshot-number {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #0f2d6b;
+  margin-bottom: 20px;
+}
+
+.snapshot-label {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #3c4b63;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+  .firm-snapshot-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+
+  .snapshot-item:nth-child(3) {
+    border-left: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .firm-snapshot {
+    padding: 60px 24px;
+  }
+
+  .firm-snapshot-intro {
+    margin-bottom: 45px;
+  }
+
+  .firm-snapshot-intro p {
+    font-size: 1.45rem;
+    line-height: 1.4;
+  }
+
+  .firm-snapshot-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .snapshot-item {
+    border-left: none;
+    border-top: 1px solid rgba(15, 35, 79, 0.16);
+    padding: 30px 0 0 0;
+  }
+
+  .snapshot-item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .snapshot-number {
+    font-size: 3.5rem;
   }
 }
