@@ -629,10 +629,34 @@ body.portfolio-page {
   position: absolute !important;
   left: 56px !important;
   right: 56px !important;
-  bottom: 48px !important;
+  bottom: 0 !important;
   top: auto !important;
   transform: none !important;
   z-index: 25 !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* FORCE HERO BLUE BOX TO BOTTOM OF HERO */
+.hero {
+  position: relative !important;
+}
+
+.hero-blue-box-wrap {
+  position: absolute !important;
+  left: 56px !important;
+  right: 56px !important;
+  bottom: 0 !important;
+  top: auto !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 50 !important;
+  display: block !important;
+}
+
+.hero-blue-box {
+  width: 100% !important;
+  background-color: rgb(20, 74, 165) !important;
+  padding: 56px 0 !important;
 }
