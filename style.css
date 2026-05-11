@@ -1244,3 +1244,200 @@ body.portfolio-page {
     gap: 36px;
   }
 }
+
+/* ───────── MARKET INSIGHTS PAGE ───────── */
+.market-insights-page {
+  background: #dbeeff;
+  color: #0f234f;
+}
+
+/* Hero image */
+.market-insights-hero {
+  position: relative;
+  height: 520px;
+  background: url("market-insights-hero.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 56px 70px;
+  box-sizing: border-box;
+}
+
+.market-insights-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.market-insights-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.market-insights-hero-content h1 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 6vw, 5.8rem);
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Detail section */
+.market-insights-detail {
+  background: #dbeeff;
+  padding: 42px 56px 90px;
+}
+
+.market-insights-detail-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.market-insights-kicker {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0f2d6b;
+  margin: 0 0 18px 0;
+}
+
+.market-insights-detail-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 80px;
+  border-top: 1px solid rgba(15, 45, 107, 0.16);
+  padding-top: 34px;
+}
+
+.market-insights-detail-left h2 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.08;
+  font-weight: 400;
+  color: #0f2d6b;
+  margin: 0 0 24px 0;
+  max-width: 760px;
+}
+
+.market-insights-detail-left p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #24405f;
+  margin: 0 0 20px 0;
+  max-width: 760px;
+}
+
+.market-insights-point {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(15, 45, 107, 0.16);
+}
+
+.market-insights-point:last-child {
+  margin-bottom: 0;
+}
+
+.market-insights-point h3 {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f2d6b;
+  margin: 0 0 10px 0;
+}
+
+.market-insights-point p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #24405f;
+  margin: 0;
+}
+
+/* Contact research box */
+.research-contact-box {
+  max-width: 1200px;
+  margin: 0 auto 90px;
+  background: #f3f3e9;
+  color: #000000;
+  padding: 34px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.research-contact-copy h2 {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  color: #000000;
+  border: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.research-contact-copy p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.research-contact-copy a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.research-contact-button {
+  background: #000000;
+  color: #ffffff;
+  padding: 16px 34px;
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.research-contact-button:hover {
+  background: #0f2d6b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .market-insights-hero {
+    height: 420px;
+    padding: 0 24px 42px;
+  }
+
+  .market-insights-detail {
+    padding: 28px 24px 60px;
+  }
+
+  .market-insights-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .research-contact-box {
+    margin: 0 24px 70px;
+    padding: 30px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .research-contact-button {
+    width: 100%;
+    text-align: center;
+  }
+}
