@@ -328,9 +328,7 @@ ul {
 
 /* ───────── PORTFOLIO PAGE FIXES ───────── */
 body.portfolio-page {
-  background: url('portfoliobackground.jpg') no-repeat center 50px fixed;
-  background-size: cover;
-  background-color: #000;
+  background: #dbeeff;
   margin: 0;
   overflow-y: auto;
   display: flex;
@@ -989,18 +987,15 @@ body.portfolio-page {
 
 /* ───────── PUBLIC EQUITIES PAGE / BLACKROCK-STYLE ───────── */
 .public-equities-hero {
-  background: #000000;
-  color: #ffffff;
+  background: #dbeeff;
+  color: #0f234f;
   padding: 150px 56px 90px;
 }
 
 .public-equities-inner {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 80px;
-  align-items: center;
+  display: block;
 }
 
 .public-equities-copy h1 {
@@ -1008,7 +1003,7 @@ body.portfolio-page {
   font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f2d6b;
   margin-bottom: 34px;
 }
 
@@ -1017,8 +1012,8 @@ body.portfolio-page {
   font-size: 1.25rem;
   line-height: 1.55;
   font-weight: 500;
-  color: #ffffff;
-  max-width: 650px;
+  color: #0f234f;
+  max-width: 850px;
   margin-bottom: 28px;
 }
 
