@@ -950,3 +950,39 @@ body.portfolio-page {
     line-height: 1.65;
   }
 }
+
+/* ───────── FOOTER SOCIAL ICONS ───────── */
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -52px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-socials a:hover {
+  background: #ffffff;
+  color: #0f2d6b;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-socials {
+    justify-content: flex-start;
+    margin-top: 24px;
+  }
+}
