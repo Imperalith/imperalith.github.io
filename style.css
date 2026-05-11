@@ -840,13 +840,16 @@ body.portfolio-page {
 
 /* ───────── FEATURED PERSPECTIVES ───────── */
 .featured-perspectives {
-  background: #111820;
+  background: #f7f7f4;
   padding: 90px 56px 110px;
 }
 
 .featured-perspectives-inner {
   max-width: 1180px;
   margin: 0 auto;
+  background: #111820;
+  padding: 48px;
+  box-sizing: border-box;
 }
 
 .featured-perspectives-label {
@@ -863,7 +866,7 @@ body.portfolio-page {
   background: #ffffff;
   border-left: 4px solid #174da5;
   padding: 48px 54px 52px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .featured-perspectives-kicker {
@@ -918,6 +921,10 @@ body.portfolio-page {
 @media (max-width: 768px) {
   .featured-perspectives {
     padding: 60px 24px 75px;
+  }
+
+  .featured-perspectives-inner {
+    padding: 28px;
   }
 
   .featured-perspectives-card {
