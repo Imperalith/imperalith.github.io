@@ -837,3 +837,95 @@ body.portfolio-page {
     padding: 50px 24px 70px;
   }
 }
+
+/* ───────── FEATURED PERSPECTIVES ───────── */
+.featured-perspectives {
+  background: #f7f7f4;
+  padding: 90px 56px 110px;
+}
+
+.featured-perspectives-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.featured-perspectives-label {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin-bottom: 28px;
+}
+
+.featured-perspectives-card {
+  background: #ffffff;
+  border-left: 4px solid #174da5;
+  padding: 48px 54px 52px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.featured-perspectives-kicker {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5f6b7a;
+  margin-bottom: 16px;
+}
+
+.featured-perspectives-title {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.12;
+  font-weight: 700;
+  color: #132f63;
+  margin: 0 0 24px 0;
+  max-width: 980px;
+}
+
+.featured-perspectives-text {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #4f5e72;
+  max-width: 900px;
+  margin: 0 0 30px 0;
+}
+
+.featured-perspectives-link {
+  display: inline-block;
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #174da5;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(23, 77, 165, 0.35);
+  padding-bottom: 4px;
+  transition: all 0.2s ease;
+}
+
+.featured-perspectives-link:hover {
+  color: #0f2d6b;
+  border-bottom-color: #0f2d6b;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .featured-perspectives {
+    padding: 60px 24px 75px;
+  }
+
+  .featured-perspectives-card {
+    padding: 34px 26px 38px;
+  }
+
+  .featured-perspectives-text {
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+}
