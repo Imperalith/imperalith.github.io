@@ -1441,3 +1441,73 @@ body.portfolio-page {
     text-align: center;
   }
 }
+
+/* ───────── MARKET INSIGHTS CONTACT BOX ───────── */
+.market-insights-contact-box {
+  max-width: 1200px;
+  margin: 0 auto 90px;
+  background: #ffffff;
+  color: #000000;
+  padding: 34px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.market-insights-contact-copy h2 {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  color: #000000;
+  border: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.market-insights-contact-copy p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.market-insights-contact-copy a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.market-insights-contact-button {
+  background: #000000;
+  color: #ffffff;
+  padding: 16px 34px;
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.market-insights-contact-button:hover {
+  background: #0f2d6b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .market-insights-contact-box {
+    margin: 0 24px 70px;
+    padding: 30px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .market-insights-contact-button {
+    width: 100%;
+    text-align: center;
+  }
+}
