@@ -1736,10 +1736,11 @@ body.portfolio-page {
 }
 
 .careers-roles-header p {
-  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.55;
-  color: #4f5e72;
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 1.08;
+  font-weight: 400;
+  color: #0f234f;
   margin: 0;
   max-width: 620px;
 }
