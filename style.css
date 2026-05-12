@@ -1691,3 +1691,9 @@ body.portfolio-page {
     margin-bottom: 60px;
   }
 }
+
+.values-lead {
+  margin-top: 18px;
+  font-weight: 700;
+  color: #0f234f;
+}
