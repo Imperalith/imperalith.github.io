@@ -1515,7 +1515,7 @@ body.portfolio-page {
 /* ───────── CAREERS PAGE HERO ───────── */
 .careers-hero-image {
   position: relative;
-  height: 680px;
+  height: 740px;
   background-image: url("careers-hero.jpg");
   background-position: center top;
   background-size: 100% auto;
