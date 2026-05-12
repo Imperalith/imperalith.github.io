@@ -1516,7 +1516,7 @@ body.portfolio-page {
 .careers-hero-image {
   position: relative;
   height: 560px;
-  background: url("careers-hero.jpg") center center / cover no-repeat;
+  background: url("careers-hero.jpg") center 65% / cover no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 0 56px 76px;
