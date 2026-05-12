@@ -2409,7 +2409,7 @@ body.contact-page .imperalith-footer {
 
 /* Small firm name under Founder & Portfolio Manager */
 .founder-firm {
-  font-family: "TT Commons", "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
   font-size: 1.05rem;
   line-height: 1.45;
   font-weight: 500;
@@ -2419,7 +2419,7 @@ body.contact-page .imperalith-footer {
 
 /* Biography body paragraphs */
 .founder-bio-copy p {
-  font-family: "TT Commons", "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
   font-size: 1.08rem;
   line-height: 1.85;
   font-weight: 400;
