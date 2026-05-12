@@ -2458,3 +2458,13 @@ body.contact-page .imperalith-footer {
 .nav-links li a {
   font-size: 0.98rem;
 }
+
+/* ───────── NAV RIGHT LINKS MATCH LOGO FONT ───────── */
+
+.nav-links li a {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #f5c542;
+}
