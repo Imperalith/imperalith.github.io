@@ -1511,3 +1511,89 @@ body.portfolio-page {
     text-align: center;
   }
 }
+
+/* ───────── CAREERS PAGE HERO ───────── */
+.careers-hero-image {
+  position: relative;
+  height: 560px;
+  background: url("careers-hero.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 56px 76px;
+  box-sizing: border-box;
+}
+
+.careers-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.28) 48%, rgba(0, 0, 0, 0.08) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.34) 100%);
+}
+
+.careers-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.careers-hero-content h1 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(3.6rem, 6vw, 5.8rem);
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  max-width: 760px;
+}
+
+/* ───────── CAREERS BLUE BAR ───────── */
+.careers-blue-box-wrap {
+  background: #0d1117;
+  padding: 0 56px;
+  margin: 0;
+}
+
+.careers-blue-box {
+  background-color: rgba(20, 74, 165, 0.88);
+  color: white;
+  max-width: 1208px;
+  margin: -70px auto 0;
+  padding: 48px 56px;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.careers-blue-box p {
+  max-width: 760px;
+  margin: 0;
+  color: white;
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .careers-hero-image {
+    height: 440px;
+    padding: 0 24px 48px;
+  }
+
+  .careers-blue-box-wrap {
+    padding: 0 24px;
+  }
+
+  .careers-blue-box {
+    margin-top: -42px;
+    padding: 34px 26px;
+  }
+
+  .careers-blue-box p {
+    font-size: 18px;
+  }
+}
