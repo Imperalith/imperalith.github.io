@@ -1692,11 +1692,12 @@ body.portfolio-page {
   }
 }
 
-.values-lead {
+.careers-values-intro .values-lead {
   margin-top: 28px;
   font-family: "Signifier", Georgia, "Times New Roman", serif;
   font-size: 2.5rem;
   line-height: 1.15;
   font-weight: 400;
   color: #0f234f;
+  max-width: 720px;
 }
