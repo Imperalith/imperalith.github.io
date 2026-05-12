@@ -1945,14 +1945,15 @@ body.contact-page {
 /* Hero */
 .contact-hero-new {
   position: relative;
-  height: 620px;
+  height: 760px;
   background-image: url("contact-hero.jpg");
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: #0d1117;
   display: flex;
   align-items: flex-end;
-  padding: 0 56px 86px;
+  padding: 0 56px 110px;
   box-sizing: border-box;
   overflow: hidden;
 }
