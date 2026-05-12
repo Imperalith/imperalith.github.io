@@ -1840,7 +1840,7 @@ body.portfolio-page {
 
 /* ───────── STRONG CANDIDATE SECTION ───────── */
 .candidate-section {
-  background: #ffffff;
+  background: #dbeeff;
   color: #0f234f;
   width: 100vw;
   margin-left: calc(50% - 50vw);
