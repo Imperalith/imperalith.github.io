@@ -1542,7 +1542,7 @@ body.portfolio-page {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  transform: translateY(-150px);
+  transform: translateY(-180px);
 }
 
 .careers-hero-content h1 {
