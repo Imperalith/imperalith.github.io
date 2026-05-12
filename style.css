@@ -1934,3 +1934,190 @@ body.portfolio-page {
 .candidate-section {
   margin-bottom: 0;
 }
+
+/* ───────── NEW CONTACT PAGE ───────── */
+body.contact-page {
+  background: #dbeeff;
+  color: #0f234f;
+  min-height: 100vh;
+}
+
+/* Hero */
+.contact-hero-new {
+  position: relative;
+  height: 620px;
+  background-image: url("contact-hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 56px 86px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.42) 45%,
+      rgba(0, 0, 0, 0.14) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.36) 100%
+    );
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-hero-content h1 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(3.6rem, 6vw, 5.8rem);
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Info + Form Section */
+.contact-info-section {
+  background: #dbeeff;
+  padding: 82px 56px 96px;
+  color: #0f234f;
+}
+
+.contact-info-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.contact-kicker {
+  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0f2d6b;
+  margin-bottom: 24px;
+}
+
+.contact-info-left h2 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.08;
+  font-weight: 400;
+  color: #0f234f;
+  border: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.contact-info-left p {
+  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #24405f;
+  max-width: 680px;
+}
+
+/* Form Card */
+.contact-form-card {
+  background: #ffffff;
+  padding: 42px;
+  box-shadow: 0 18px 45px rgba(15, 35, 79, 0.12);
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+  width: 100%;
+  border: 1px solid rgba(15, 35, 79, 0.18);
+  background: #f7f9fc;
+  color: #0f234f;
+  padding: 15px 16px;
+  margin-bottom: 16px;
+  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: none;
+}
+
+.contact-form-card textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+  color: #66758c;
+}
+
+.contact-form-card button {
+  width: 100%;
+  background: #0f2d6b;
+  color: #ffffff;
+  border: none;
+  padding: 16px 20px;
+  font-family: "TT Commons", Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.contact-form-card button:hover {
+  background: #174da5;
+}
+
+#confirmation-message {
+  color: #0f2d6b;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  background: transparent;
+  padding: 0;
+  display: none;
+}
+
+/* Contact footer full width */
+body.contact-page .imperalith-footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .contact-hero-new {
+    height: 460px;
+    padding: 0 24px 52px;
+  }
+
+  .contact-info-section {
+    padding: 60px 24px 74px;
+  }
+
+  .contact-info-inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .contact-form-card {
+    padding: 30px 24px;
+  }
+}
