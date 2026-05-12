@@ -1604,3 +1604,132 @@ body.portfolio-page {
     font-size: 18px;
   }
 }
+
+/* ───────── CAREERS VALUES SECTION ───────── */
+.careers-values {
+  background: #dbeeff;
+  color: #0f234f;
+  padding: 90px 56px 100px;
+  margin: 0 0 70px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.careers-values-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.careers-values-intro {
+  max-width: 760px;
+  margin-bottom: 70px;
+}
+
+.careers-values-intro h2 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: #0f234f;
+  border: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.careers-values-intro p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #24405f;
+  max-width: 720px;
+}
+
+.careers-values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 58px 64px;
+}
+
+.careers-value-item {
+  border-top: 1px solid rgba(15, 35, 79, 0.55);
+  padding-top: 28px;
+}
+
+.careers-value-item h3 {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #0f234f;
+  margin: 0 0 16px;
+}
+
+.careers-value-item p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #24405f;
+  margin: 0;
+}
+
+/* ───────── READY TO APPLY SECTION ───────── */
+.careers-ready {
+  background: #d9d9d9;
+  padding: 78px 56px;
+  margin: 0 0 80px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.careers-ready-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.careers-ready-inner h2 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  line-height: 1.1;
+  font-weight: 400;
+  color: #0f234f;
+  border: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.careers-ready-inner p {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  line-height: 1.2;
+  font-weight: 400;
+  color: #0f234f;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Open Roles spacing */
+.open-roles-section {
+  margin-top: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .careers-values {
+    padding: 65px 24px 75px;
+    margin-bottom: 55px;
+  }
+
+  .careers-values-intro {
+    margin-bottom: 48px;
+  }
+
+  .careers-values-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .careers-ready {
+    padding: 55px 24px;
+    margin-bottom: 60px;
+  }
+}
