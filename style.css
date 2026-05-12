@@ -1840,19 +1840,11 @@ body.portfolio-page {
 
 /* ───────── STRONG CANDIDATE SECTION ───────── */
 .candidate-section {
-  background: rgba(20, 74, 165, 0.75);
-  color: #ffffff;
+  background: #dbeeff;
+  color: #0f234f;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   padding: 90px 56px 100px;
-}
-
-.candidate-copy h2 {
-  color: #ffffff;
-}
-
-.candidate-copy li {
-  color: rgba(255, 255, 255, 0.88);
 }
 
 .candidate-inner {
