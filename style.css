@@ -1571,7 +1571,7 @@ body.portfolio-page {
   position: relative;
   z-index: 5;
   box-sizing: border-box;
-  transform: translateY(-140px);
+  transform: translateY(-170px);
 }
 
 .careers-blue-box p {
