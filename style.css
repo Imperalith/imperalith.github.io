@@ -1925,3 +1925,8 @@ body.portfolio-page {
   margin-left: calc(50% - 50vw);
   margin-top: 0;
 }
+
+/* Remove gap above careers footer */
+.careers-content {
+  margin-bottom: 0;
+}
