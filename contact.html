@@ -161,13 +161,33 @@
         </p>
       </div>
 
-      <div class="contact-form-card">
+      <div class="contact-form-card institutional-form-card">
+        <h2>Contact our institutional team</h2>
+
         <form id="contactForm" action="https://formspree.io/f/myzjonyv" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+          <label for="name">Full Name *</label>
+          <input id="name" type="text" name="name" required />
+
+          <label for="title">Title *</label>
+          <input id="title" type="text" name="title" placeholder="If none, write N/A" required />
+
+          <label for="email">Business Email Address *</label>
+          <input id="email" type="email" name="email" placeholder="If none, use Gmail" required />
+
+          <label for="location">Location *</label>
+          <input id="location" type="text" name="location" required />
+
+          <label for="organization">Organization *</label>
+          <input id="organization" type="text" name="organization" required />
+
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <p class="form-privacy-note">
+            Any information submitted will be reviewed by Imperalith Capital Management.
+          </p>
+
+          <button type="submit">Submit</button>
           <div id="confirmation-message"></div>
         </form>
       </div>
