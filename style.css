@@ -1884,10 +1884,15 @@ body.portfolio-page {
 
 .candidate-copy li {
   font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   line-height: 1.55;
+  font-weight: 600;
   color: #ffffff;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.candidate-copy li::marker {
+  color: #ffffff;
 }
 
 .candidate-copy li::marker {
