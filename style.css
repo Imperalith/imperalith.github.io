@@ -2423,3 +2423,27 @@ body.contact-page .imperalith-footer {
   letter-spacing: 0.005em;
   color: #24405f;
 }
+/* ───────── NAVBAR FONT REFINEMENT ───────── */
+
+.logo,
+.logo a {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #f5c542 !important;
+}
+
+.nav-links li a {
+  font-family: "TT Commons", "Inter", Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f5c542;
+  text-transform: none;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
