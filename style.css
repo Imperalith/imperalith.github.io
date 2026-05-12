@@ -1918,3 +1918,10 @@ body.portfolio-page {
     font-size: 1.05rem;
   }
 }
+
+/* ───────── CAREERS FOOTER FIX ───────── */
+.careers-footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 0;
+}
