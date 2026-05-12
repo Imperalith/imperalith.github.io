@@ -2447,3 +2447,14 @@ body.contact-page .imperalith-footer {
   color: #ffffff;
   text-decoration: none;
 }
+
+/* ───────── NAVBAR SIZE INCREASE ───────── */
+
+.logo,
+.logo a {
+  font-size: 1.75rem;
+}
+
+.nav-links li a {
+  font-size: 0.98rem;
+}
