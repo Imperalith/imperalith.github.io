@@ -1555,35 +1555,6 @@ body.portfolio-page {
   max-width: 760px;
 }
 
-/* ───────── CAREERS BLUE BAR ───────── */
-.careers-blue-box-wrap {
-  background: #0d1117;
-  padding: 0 56px;
-  margin: 0 0 -140px 0;
-}
-
-.careers-blue-box {
-  background-color: rgba(20, 74, 165, 0.75);
-  color: white;
-  max-width: 1208px;
-  margin: 0 auto;
-  padding: 48px 56px;
-  position: relative;
-  z-index: 5;
-  box-sizing: border-box;
-  transform: translateY(-240px);
-}
-
-.careers-blue-box p {
-  max-width: 760px;
-  margin: 0;
-  color: white;
-  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-}
-
 /* Mobile */
 @media (max-width: 768px) {
   .careers-hero-image {
