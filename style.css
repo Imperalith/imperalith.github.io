@@ -1701,3 +1701,138 @@ body.portfolio-page {
   color: #0f234f;
   max-width: 720px;
 }
+
+/* ───────── CAREERS ROLE EXPLORER ───────── */
+.careers-roles-section {
+  background: #ffffff;
+  color: #0f234f;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 90px 56px 100px;
+}
+
+.careers-roles-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.careers-roles-header {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  gap: 70px;
+  align-items: start;
+  margin-bottom: 70px;
+}
+
+.careers-roles-header h2 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: #0f234f;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.careers-roles-header p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: #4f5e72;
+  margin: 0;
+  max-width: 620px;
+}
+
+.careers-role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.careers-role-card {
+  border-left: 1px solid rgba(15, 35, 79, 0.25);
+  padding: 0 34px 0 34px;
+  min-height: 360px;
+}
+
+.careers-role-card:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.careers-role-card h3 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.15;
+  font-weight: 400;
+  color: #0f234f;
+  margin: 14px 0 28px;
+}
+
+.careers-role-tag {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #174da5;
+  margin-bottom: 10px;
+}
+
+.careers-role-card p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #4f5e72;
+  margin: 0 0 18px;
+}
+
+.careers-role-card strong {
+  color: #0f234f;
+}
+
+.careers-role-card a {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #174da5;
+  text-decoration: none;
+}
+
+.careers-role-card a:hover {
+  color: #0f234f;
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .careers-roles-section {
+    padding: 70px 24px 80px;
+  }
+
+  .careers-roles-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 52px;
+  }
+
+  .careers-role-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .careers-role-card {
+    border-left: none;
+    border-top: 1px solid rgba(15, 35, 79, 0.25);
+    padding: 30px 0 0;
+    min-height: auto;
+  }
+
+  .careers-role-card:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
