@@ -2694,8 +2694,12 @@ nav.navbar {
 }
 
 /* ───────── FOUNDER BACKGROUND COLOR MATCH ───────── */
-
 .founder-page-main,
 .founder-bio-section {
   background: #d9d9d9 !important;
+}
+
+/* ───────── FOUNDER PROFILE CARD INFO COLOR ───────── */
+.founder-profile-info {
+  background: #dbeeff !important;
 }
