@@ -2839,3 +2839,13 @@ nav.navbar {
     padding: 60px 24px 70px;
   }
 }
+
+/* ───────── QUESTIONS CTA BODY TEXT FONT/COLOR ───────── */
+
+.index-page .questions-cta p {
+  font-family: "TT Commons", HelveticaNeueLTStd-Roman, Helvetica, Arial, sans-serif !important;
+  font-size: 1.55rem !important;
+  line-height: 1.55 !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+}
