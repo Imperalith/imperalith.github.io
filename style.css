@@ -2717,3 +2717,8 @@ nav.navbar {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
+/* ───────── INDEX ONLY: FEATURED PERSPECTIVES BACKGROUND ───────── */
+.index-page .featured-perspectives {
+  background: #d9d9d9 !important;
+}
