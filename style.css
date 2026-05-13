@@ -2668,17 +2668,17 @@ nav.navbar {
 /* ───────── FOOTER SPACING FINAL FIX ───────── */
 
 .imperalith-footer {
-  padding: 48px 56px 34px !important;
+  padding: 42px 56px 30px !important;
 }
 
 .footer-brand {
-  margin-bottom: 56px !important;
+  margin-bottom: 42px !important;
 }
 
 .footer-links {
-  padding: 22px 0 !important;
+  padding: 20px 0 !important;
 }
 
 .footer-bottom {
-  padding-top: 22px !important;
+  padding-top: 20px !important;
 }
