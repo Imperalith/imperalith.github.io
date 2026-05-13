@@ -2682,3 +2682,13 @@ nav.navbar {
 .footer-bottom {
   padding-top: 20px !important;
 }
+
+/* ───────── INDEX ONLY: REMOVE GAP ABOVE FOOTER ───────── */
+
+.index-page .featured-perspectives {
+  margin-bottom: 0 !important;
+}
+
+.index-page .imperalith-footer {
+  margin-top: 0 !important;
+}
