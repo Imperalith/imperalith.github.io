@@ -2692,3 +2692,10 @@ nav.navbar {
 .index-page .imperalith-footer {
   margin-top: 0 !important;
 }
+
+/* ───────── FOUNDER BACKGROUND COLOR MATCH ───────── */
+
+.founder-page-main,
+.founder-bio-section {
+  background: #d9d9d9 !important;
+}
