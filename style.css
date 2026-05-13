@@ -2628,3 +2628,39 @@ nav.navbar {
     font-size: 1.15rem !important;
   }
 }
+
+/* ───────── FINAL FOOTER REFINEMENT ───────── */
+.footer-description {
+  max-width: 620px;
+  margin: -58px 0 70px;
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer-disclaimer {
+  margin-top: 10px !important;
+  max-width: 760px;
+  font-family: "TT Commons", "Inter", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.footer-links {
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
