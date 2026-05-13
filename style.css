@@ -2698,3 +2698,22 @@ nav.navbar {
 .founder-bio-section {
   background: #d9d9d9 !important;
 }
+
+/* ───────── CAREERS ONLY: REMOVE SECTION GAPS ───────── */
+.careers-page section {
+  margin-bottom: 0 !important;
+}
+
+.careers-page .careers-hero-image,
+.careers-page .careers-values,
+.careers-page .careers-ready,
+.careers-page .careers-roles-section,
+.careers-page .candidate-section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.careers-page .careers-content {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
