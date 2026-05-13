@@ -2664,3 +2664,21 @@ nav.navbar {
   flex-direction: column;
   gap: 4px;
 }
+
+/* ───────── FOOTER SPACING FINAL FIX ───────── */
+
+.imperalith-footer {
+  padding: 48px 56px 34px !important;
+}
+
+.footer-brand {
+  margin-bottom: 56px !important;
+}
+
+.footer-links {
+  padding: 22px 0 !important;
+}
+
+.footer-bottom {
+  padding-top: 22px !important;
+}
