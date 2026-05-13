@@ -2722,3 +2722,61 @@ nav.navbar {
 .index-page .featured-perspectives {
   background: #d9d9d9 !important;
 }
+
+/* ───────── INDEX QUESTIONS CTA ───────── */
+.index-page .questions-cta {
+  background: #d9d9d9;
+  color: #0f234f;
+  padding: 78px 56px 86px;
+  margin-bottom: 0 !important;
+}
+
+.questions-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.questions-cta h2 {
+  font-family: "Signifier", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: #0f234f;
+  border: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.questions-cta p {
+  font-family: "TT Commons", "Inter", Helvetica, Arial, sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: #24405f;
+  max-width: 680px;
+  margin: 0 auto 34px;
+}
+
+.questions-cta-button {
+  display: inline-block;
+  background: #0f2d6b;
+  color: #ffffff !important;
+  padding: 16px 34px;
+  font-family: "TT Commons", "Inter", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.questions-cta-button:hover {
+  background: #000000;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .index-page .questions-cta {
+    padding: 60px 24px 70px;
+  }
+}
